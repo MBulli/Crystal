@@ -8,6 +8,8 @@
 
 #import "CRYViewController.h"
 
+#import "ESTBeacon.h"
+
 @interface CRYViewController ()
 
 @end
