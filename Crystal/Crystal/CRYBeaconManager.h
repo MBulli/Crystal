@@ -13,7 +13,6 @@
 
 
 @protocol CRYBeaconManagerDelegate <NSObject>
--(void)test;
 
 @end
 
