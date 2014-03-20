@@ -100,11 +100,17 @@
 
 -(void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
 {
-    [self displayRegionAlert:region withTitle:@"did enter region"];
+    UILocalNotification *notification = [UILocalNotification new];
+    notification.alertBody = @"Neues Produkt in ihrer Reichweite";
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 -(void)beaconManager:(ESTBeaconManager *)manager didExitRegion:(ESTBeaconRegion *)region
 {
-    [self displayRegionAlert:region withTitle:@"did exit region"];
+//    UILocalNotification *notification = [UILocalNotification new];
+//    notification.alertBody = @"Keine Produkte mehr in Reichweite";
+//    
+//    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
 -(void)displayRegionAlert:(ESTBeaconRegion *)region withTitle:(NSString *)title

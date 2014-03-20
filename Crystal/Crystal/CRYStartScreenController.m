@@ -118,11 +118,7 @@
 {
     if(self.manager.isBeaconInRange)
     {
-        UILocalNotification *notification = [UILocalNotification new];
-        notification.alertBody = @"Enter region notification";
-        
-        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-        
+            
         [self.timer invalidate];
         self.timer = nil;
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
