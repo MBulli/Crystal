@@ -9,6 +9,7 @@
 #import "CRYQuestionDetailViewController.h"
 
 #import "UIColor+CRYExt.h"
+#import "CRYUserSettings.h"
 
 @interface CRYQuestionDetailViewController ()
 
@@ -74,6 +75,14 @@
         
         [cell setIndentationLevel:32];
         [cell setIndentationWidth:1];
+		
+		NSArray *cats = [CRYUserSettings loadCategories];
+		for (NSString *s in cats) {
+			if ([s isEqualToString:cell.textLabel.text]) {
+				cell.accessoryType =UITableViewCellAccessoryCheckmark;
+			}
+		}
+		
     }
     
     return cell;
@@ -84,11 +93,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
+	
+	NSMutableArray *cats = [[CRYUserSettings loadCategories] mutableCopy];
+	
     if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
         cell.accessoryType = UITableViewCellAccessoryNone;
+		[cats removeObject:cell.textLabel.text];
     } else {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
+		[cats addObject:cell.textLabel.text];
     }
+	[CRYUserSettings saveCategories:cats];
 }
 @end

@@ -11,6 +11,7 @@
 #import "CRYQuestionDetailViewController.h"
 
 #import "UIColor+CRYExt.h"
+#import "CRYUserSettings.h"
 
 @interface CRYInitialScreenController ()
 @property(nonatomic, strong) NSDictionary *interest;
@@ -30,11 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.interest = @{@"Geschichte": @[@"WW I", @"WW II", @"WW III"],
-                      @"Sport": @[@"Fußball", @"Handballd", @"Basketball"],
-                      @"Lesen": @[],
-                      @"Architektur": @[]};
+	self.interest = [CRYUserSettings fehlAmPlatzAberIrgendwoMuessenDieKategorienHin];
+//    self.interest = @{@"Geschichte": @[@"WW I", @"WW II", @"WW III"],
+//                      @"Sport": @[@"Fußball", @"Handballd", @"Basketball"],
+//                      @"Lesen": @[],
+//                      @"Architektur": @[]};
 }
 
 -(void)viewWillAppear:(BOOL)animated
