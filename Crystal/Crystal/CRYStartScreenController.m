@@ -65,7 +65,7 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"initScreenShown"];
         
         CRYInitialScreenController *initSetup = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"CRYInitialScreenController"];
-        [initSetup setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+        [initSetup setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
         [self presentViewController:initSetup animated:YES completion:nil];
     }
     
