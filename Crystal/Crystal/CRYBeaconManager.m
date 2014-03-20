@@ -56,7 +56,7 @@
 {
     
     if (state == CLRegionStateInside) {
-        CRYBeaconObject* beacon = [CRYBeaconObject beacon:region.proximityUUID.UUIDString];
+        CRYBeaconObject* beacon = [CRYBeaconObject beacon:region.proximityUUID.UUIDString];  
         NSLog(@"%@",[beacon articles].lastObject);
     }
     else if(state== CLRegionStateOutside)

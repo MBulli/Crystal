@@ -1,28 +1,26 @@
 //
-//  CRYInitialScreenController.m
+//  CRYQuestionDetailViewController.m
 //  Crystal
 //
-//  Created by Steffen on 20.03.14.
+//  Created by Markus on 3/20/14.
 //  Copyright (c) 2014 Crystal Corp. All rights reserved.
 //
-
-#import "CRYInitialScreenController.h"
 
 #import "CRYQuestionDetailViewController.h"
 
 #import "UIColor+CRYExt.h"
 
-@interface CRYInitialScreenController ()
-@property(nonatomic, strong) NSDictionary *interest;
+@interface CRYQuestionDetailViewController ()
+
 @end
 
-@implementation CRYInitialScreenController
+@implementation CRYQuestionDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
+        // Custom initialization
     }
     return self;
 }
@@ -30,11 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.interest = @{@"Geschichte": @[@"WW I", @"WW II", @"WW III"],
-                      @"Sport": @[@"Fußball", @"Handballd", @"Basketball"],
-                      @"Lesen": @[],
-                      @"Architektur": @[]};
+    // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -42,6 +36,8 @@
     self.view.backgroundColor = [UIColor whiteBackground];
     self.tableView.backgroundView = nil;
     self.tableView.backgroundColor = [UIColor whiteBackground];
+    
+    self.headlineLabel.text = self.title;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,33 +45,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"segQuestionDetail"]) {
-        CRYQuestionDetailViewController *dest = segue.destinationViewController;
-        
-        NSString* key = self.interest.allKeys[self.tableView.indexPathForSelectedRow.row];
-        
-        dest.title = [key uppercaseString];
-        dest.items = self.interest[key];
-    }
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (IBAction)tappedDoneButton:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 #pragma mark - UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -85,7 +59,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.interest.count;
+    return self.items.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,11 +67,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     if (cell) {
-        cell.textLabel.text = self.interest.allKeys[indexPath.row];
+        cell.textLabel.text = self.items[indexPath.row];
         cell.textLabel.textColor = [UIColor blueFontColor];
         cell.backgroundView = nil;
         cell.backgroundColor = [UIColor whiteBackground];
-                
+        
         [cell setIndentationLevel:32];
         [cell setIndentationWidth:1];
     }
@@ -108,6 +82,13 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
 }
-
 @end
