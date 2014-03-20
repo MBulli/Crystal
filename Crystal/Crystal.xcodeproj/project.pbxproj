@@ -53,6 +53,8 @@
 		AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */; };
 		AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */; };
 		AE55CE2018DAA2A60015E03B /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AE55CE1F18DAA2A60015E03B /* categories.json */; };
+		AEBB4CE518DAE40700EE20A5 /* CRYInit01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBB4CE418DAE40700EE20A5 /* CRYInit01ViewController.m */; };
+		AEBB4CE818DAE45600EE20A5 /* CRYInit02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBB4CE718DAE45600EE20A5 /* CRYInit02ViewController.m */; };
 		F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */; };
 		F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */; };
 		F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F5E18DA875F00A1E17D /* CRYLabel.m */; };
@@ -200,6 +202,10 @@
 		AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconManager.h; sourceTree = "<group>"; };
 		AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconManager.m; sourceTree = "<group>"; };
 		AE55CE1F18DAA2A60015E03B /* categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		AEBB4CE318DAE40700EE20A5 /* CRYInit01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInit01ViewController.h; sourceTree = "<group>"; };
+		AEBB4CE418DAE40700EE20A5 /* CRYInit01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInit01ViewController.m; sourceTree = "<group>"; };
+		AEBB4CE618DAE45600EE20A5 /* CRYInit02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInit02ViewController.h; sourceTree = "<group>"; };
+		AEBB4CE718DAE45600EE20A5 /* CRYInit02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInit02ViewController.m; sourceTree = "<group>"; };
 		F9913F4618DA7DA100A1E17D /* CRYInitialScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInitialScreenController.h; sourceTree = "<group>"; };
 		F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInitialScreenController.m; sourceTree = "<group>"; };
 		F9913F4818DA7DA100A1E17D /* CRYStartScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYStartScreenController.h; sourceTree = "<group>"; };
@@ -506,6 +512,10 @@
 				F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */,
 				F9DE76D518DAD2DF00630DAF /* CRYDetail1Controller.h */,
 				F9DE76D618DAD2DF00630DAF /* CRYDetail1Controller.m */,
+				AEBB4CE318DAE40700EE20A5 /* CRYInit01ViewController.h */,
+				AEBB4CE418DAE40700EE20A5 /* CRYInit01ViewController.m */,
+				AEBB4CE618DAE45600EE20A5 /* CRYInit02ViewController.h */,
+				AEBB4CE718DAE45600EE20A5 /* CRYInit02ViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -790,6 +800,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
+				AEBB4CE518DAE40700EE20A5 /* CRYInit01ViewController.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				F9DE76D718DAD2DF00630DAF /* CRYDetail1Controller.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
@@ -807,6 +818,7 @@
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				F9DE75EC18DAA80800630DAF /* CRYButton.m in Sources */,
 				543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */,
+				AEBB4CE818DAE45600EE20A5 /* CRYInit02ViewController.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 				2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */,
 			);
