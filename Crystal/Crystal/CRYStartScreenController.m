@@ -10,6 +10,9 @@
 
 #import "CRYInitialScreenController.h"
 #import "CRYBeaconManager.h"
+#import "CRYBeaconObject.h"
+#import "CRYUserSettings.h"
+
 @interface CRYStartScreenController ()
 
 @property(nonatomic, strong) CRYBeaconManager* manager;
@@ -33,6 +36,12 @@
     // Do any additional setup after loading the view from its nib.
     
      NSLog(@"view loaded");
+	
+//	[CRYUserSettings saveCategories:@[@"Getränke",@"nix"]];
+//	CRYBeaconObject *beacon = [CRYBeaconObject beacon:@"uuid-beacon-id"];
+//	NSLog(@"%@", [beacon advertisedArticles]);
+//	[beacon filterArray:@"sup"];
+//	NSLog(@"%@", beacon.filteredArticles);
 }
 
 
