@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CRYBeaconObject.h"
 
-@interface CRYSortimentScreenController : UIViewController
-
+@interface CRYSortimentScreenController : UITableViewController <UISearchBarDelegate>
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) CRYBeaconObject *beacon;
 @end

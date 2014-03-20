@@ -200,6 +200,16 @@
                                 <color key="textColor" red="0.2901960784" green="0.52156862749999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g5m-zy-vlJ">
+                                <rect key="frame" x="50" y="422" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gNL-fF-ald" kind="push" id="3Ik-Zk-laE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -250,6 +260,59 @@
             </objects>
             <point key="canvasLocation" x="-70" y="801"/>
         </scene>
+        <!--Sortiment Screen Controller-->
+        <scene sceneID="SHi-u4-hUc">
+            <objects>
+                <tableViewController id="gNL-fF-ald" customClass="CRYSortimentScreenController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Fxu-fm-QgD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="ztf-4n-wxd">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="my_cell" textLabel="UIt-Ep-enT" detailTextLabel="2Ye-Mn-tcO" style="IBUITableViewCellStyleSubtitle" id="Ev5-rD-L9l">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ev5-rD-L9l" id="8TN-jh-JlX">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UIt-Ep-enT">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Ye-Mn-tcO">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gNL-fF-ald" id="pRV-CO-eWg"/>
+                            <outlet property="delegate" destination="gNL-fF-ald" id="h2N-2g-Tft"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iOU-Jm-ids"/>
+                    <connections>
+                        <outlet property="searchBar" destination="ztf-4n-wxd" id="Cmk-yP-4fQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTC-U0-ful" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="457"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="amN-oQ-DLJ">
             <objects>
@@ -297,7 +360,7 @@ FINDER</string>
                                 </state>
                                 <connections>
                                     <action selector="tappedSortimentButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="V8y-a8-e0a"/>
-                                    <segue destination="cf6-TF-kC9" kind="push" id="x9b-fF-euF"/>
+                                    <segue destination="gNL-fF-ald" kind="push" id="Txe-in-qGn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yAa-0b-m1g">
@@ -330,7 +393,7 @@ FINDER</string>
                                 </state>
                                 <connections>
                                     <action selector="tappedSortimentButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="rKJ-Ew-PPN"/>
-                                    <segue destination="cf6-TF-kC9" kind="push" id="Atr-18-z2m"/>
+                                    <segue destination="gNL-fF-ald" kind="push" id="XqP-pQ-PzL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OQI-yg-rlG" customClass="CRYButton">
@@ -390,40 +453,6 @@ FINDER</string>
             </objects>
             <point key="canvasLocation" x="388" y="75"/>
         </scene>
-        <!--Sortiment Screen Controller-->
-        <scene sceneID="UUl-yr-iTc">
-            <objects>
-                <viewController id="cf6-TF-kC9" customClass="CRYSortimentScreenController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5uU-5N-mLd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="B1o-fu-JSe">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterMainNavi.png" id="grB-UB-3e4">
-                                <rect key="frame" x="0.0" y="460" width="320" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zfP-Qs-JXC">
-                        <nil key="title"/>
-                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="pvi-k0-IrY">
-                            <rect key="frame" x="47" y="7" width="227" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F0J-Wx-TEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="841" y="401"/>
-        </scene>
     </scenes>
     <resources>
         <image name="FooterMainNavi.png" width="640" height="216"/>
@@ -440,7 +469,7 @@ FINDER</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="XqP-pQ-PzL"/>
         <segue reference="gnc-zo-cld"/>
-        <segue reference="Atr-18-z2m"/>
     </inferredMetricsTieBreakers>
 </document>
