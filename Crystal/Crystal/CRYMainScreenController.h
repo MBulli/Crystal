@@ -13,7 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *angebotButton;
 @property (weak, nonatomic) IBOutlet UIButton *sortimentButton;
 
+
 - (IBAction)tappedAngebotButton:(id)sender;
 - (IBAction)tappedSortimentButton:(id)sender;
+- (IBAction)tappedInterestButton:(id)sender;
 
 @end

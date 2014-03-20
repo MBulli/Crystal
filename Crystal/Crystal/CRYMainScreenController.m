@@ -7,6 +7,8 @@
 //
 
 #import "CRYMainScreenController.h"
+#import "CRYInitialScreenController.h"
+
 
 @interface CRYMainScreenController ()
 
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,4 +55,17 @@
 
 - (IBAction)tappedSortimentButton:(id)sender {
 }
+
+- (IBAction)tappedInterestButton:(id)sender {
+    
+    
+    CRYInitialScreenController *initSetup = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"CRYInitialScreenController"];
+    [initSetup setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:initSetup animated:YES completion:nil];
+    
+}
+
+
+
+
 @end

@@ -18,7 +18,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="WJn-YW-3TS" style="IBUITableViewCellStyleDefault" id="GjP-az-nl0">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GjP-az-nl0" id="0RT-SL-LZo">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -205,18 +205,21 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="aQw-52-btX" customClass="CRYLoading">
-                                <rect key="frame" x="144" y="298" width="32" height="11"/>
+                                <rect key="frame" x="144" y="212" width="32" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" id="PtY-a8-0Pw">
-                                <rect key="frame" x="105" y="139" width="97" height="107"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yev-hb-5LE">
+                                <rect key="frame" x="113" y="83" width="95" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5M0-fU-7Bk"/>
+                    <connections>
+                        <outlet property="animatedImageView" destination="yev-hb-5LE" id="2Ac-F5-iyc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQP-Fk-j6Q" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MERKEZTTEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77b-SL-hKr">
-                                <rect key="frame" x="145" y="273" width="109" height="21"/>
+                                <rect key="frame" x="106" y="244" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -279,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ9-fR-YsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="-717"/>
+            <point key="canvasLocation" x="383" y="-629"/>
         </scene>
         <!--Main Screen Controller-->
         <scene sceneID="gDv-W9-GYl">
@@ -350,7 +353,7 @@ FINDER</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vNB-Al-0Qh" kind="push" id="vAo-Qc-BJw"/>
+                                    <action selector="tappedInterestButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="9CS-xl-ie8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wO1-0z-Rji" customClass="CRYButton">
@@ -369,7 +372,7 @@ FINDER</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vNB-Al-0Qh" kind="push" id="w6Y-5U-fjm"/>
+                                    <action selector="tappedInterestButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="qLh-ia-OS3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dm9-ci-jNh">
@@ -421,7 +424,6 @@ FINDER</string>
         <image name="HeaderClear.png" width="640" height="170"/>
         <image name="Icon1MainNavi.png" width="40" height="45"/>
         <image name="Icon2MainNavi.png" width="40" height="45"/>
-        <image name="Logo.png" width="194" height="214"/>
         <image name="MainViewFooterLogo.png" width="640" height="822"/>
         <image name="Pic1MainNavi.png" width="253" height="171"/>
         <image name="Pic2MainNavi.png" width="253" height="171"/>
@@ -432,7 +434,6 @@ FINDER</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="w6Y-5U-fjm"/>
         <segue reference="Atr-18-z2m"/>
     </inferredMetricsTieBreakers>
 </document>
