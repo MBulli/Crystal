@@ -13,7 +13,6 @@
 
 
 @protocol CRYBeaconManagerDelegate <NSObject>
--(void)test;
 
 @end
 
@@ -26,6 +25,7 @@
 @property(nonatomic, strong) ESTBeaconManager* beaconManager;
 @property(nonatomic, strong) NSMutableArray* beaconRegion;
 @property(nonatomic, strong) NSMutableArray* identifier;
+@property(nonatomic, assign) BOOL isBeaconInRange;
 
 @property(nonatomic, weak) NSObject<CRYBeaconManagerDelegate> *delegate;
 @end

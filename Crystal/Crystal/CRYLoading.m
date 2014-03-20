@@ -91,13 +91,26 @@
     [self.layer addSublayer:self.bobble2];
     [self.layer addSublayer:self.bobble3];
 
-    self.timer =[NSTimer timerWithTimeInterval:0.40
-                                        target:self
-                                      selector:@selector(timerTick)
-                                      userInfo:nil
-                                       repeats:YES];
+//    self.timer = [NSTimer timerWithTimeInterval:0.40
+//                                          target:self
+//                                        selector:@selector(timerTick)
+//                                        userInfo:nil
+//                                         repeats:YES];
+//    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
     
-    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"fillColor"];
+    anim.removedOnCompletion = NO;
+    anim.autoreverses = YES;
+    anim.keyTimes = @[@0.0, @0.40, @0.80];
+    anim.values = @[(id)c1.CGColor, (id)c2.CGColor, (id)c3.CGColor];
+    anim.duration = 1.2;
+    anim.calculationMode = kCAAnimationPaced;
+    
+    anim.repeatCount = 999999;
+
+    [self.bobble1 addAnimation:anim forKey:nil];
+    [self.bobble2 addAnimation:anim forKey:nil];
+    [self.bobble3 addAnimation:anim forKey:nil];
 }
 
 -(void)timerTick
@@ -127,6 +140,7 @@
         default:
             break;
     }
+    
 }
 
 
