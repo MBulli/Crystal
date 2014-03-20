@@ -11,4 +11,5 @@
 @interface CRYUserSettings : NSObject
 +(void)saveCategories:(NSArray*)categories;
 +(NSArray*)loadCategories;
++(NSArray*)fehlAmPlatzAberIrgendwoMuessenDieKategorienHin;
 @end
