@@ -54,6 +54,10 @@
 		F9DE75F018DAAC9100630DAF /* PicMainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75EF18DAAC9100630DAF /* PicMainNavi.png */; };
 		F9DE75F318DAAE9E00630DAF /* Pic1MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75F118DAAE9E00630DAF /* Pic1MainNavi.png */; };
 		F9DE75F418DAAE9E00630DAF /* Pic2MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75F218DAAE9E00630DAF /* Pic2MainNavi.png */; };
+		F9DE75F718DAB39600630DAF /* CRYMainScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75F618DAB39600630DAF /* CRYMainScreenController.m */; };
+		F9DE75F918DAB62000630DAF /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75F818DAB62000630DAF /* Logo.png */; };
+		F9DE75FC18DAB68B00630DAF /* Icon1MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75FA18DAB68B00630DAF /* Icon1MainNavi.png */; };
+		F9DE75FD18DAB68B00630DAF /* Icon2MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75FB18DAB68B00630DAF /* Icon2MainNavi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,11 @@
 		F9DE75EF18DAAC9100630DAF /* PicMainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicMainNavi.png; sourceTree = "<group>"; };
 		F9DE75F118DAAE9E00630DAF /* Pic1MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pic1MainNavi.png; sourceTree = "<group>"; };
 		F9DE75F218DAAE9E00630DAF /* Pic2MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pic2MainNavi.png; sourceTree = "<group>"; };
+		F9DE75F518DAB39600630DAF /* CRYMainScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYMainScreenController.h; sourceTree = "<group>"; };
+		F9DE75F618DAB39600630DAF /* CRYMainScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYMainScreenController.m; sourceTree = "<group>"; };
+		F9DE75F818DAB62000630DAF /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		F9DE75FA18DAB68B00630DAF /* Icon1MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon1MainNavi.png; path = ../../../../../../Dropbox/Innonight/pngs/Icon1MainNavi.png; sourceTree = "<group>"; };
+		F9DE75FB18DAB68B00630DAF /* Icon2MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon2MainNavi.png; path = ../../../../../../Dropbox/Innonight/pngs/Icon2MainNavi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +178,9 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE75FA18DAB68B00630DAF /* Icon1MainNavi.png */,
+				F9DE75FB18DAB68B00630DAF /* Icon2MainNavi.png */,
+				F9DE75F818DAB62000630DAF /* Logo.png */,
 				F9DE75F118DAAE9E00630DAF /* Pic1MainNavi.png */,
 				F9DE75F218DAAE9E00630DAF /* Pic2MainNavi.png */,
 				F9DE75EF18DAAC9100630DAF /* PicMainNavi.png */,
@@ -325,6 +337,8 @@
 				F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */,
 				2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */,
 				2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */,
+				F9DE75F518DAB39600630DAF /* CRYMainScreenController.h */,
+				F9DE75F618DAB39600630DAF /* CRYMainScreenController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -480,12 +494,15 @@
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
 				F9DE75E618DAA6E900630DAF /* MainViewFooter.png in Resources */,
 				2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */,
+				F9DE75F918DAB62000630DAF /* Logo.png in Resources */,
 				2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */,
+				F9DE75FD18DAB68B00630DAF /* Icon2MainNavi.png in Resources */,
 				F9DE75EE18DAABEB00630DAF /* FooterMainNavi.png in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
 				F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */,
+				F9DE75FC18DAB68B00630DAF /* Icon1MainNavi.png in Resources */,
 				AE55CDD918DA35160015E03B /* InfoPlist.strings in Resources */,
 				F9DE75F318DAAE9E00630DAF /* Pic1MainNavi.png in Resources */,
 			);
@@ -512,6 +529,7 @@
 				F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */,
 				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
 				F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */,
+				F9DE75F718DAB39600630DAF /* CRYMainScreenController.m in Sources */,
 				2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */,
 				F9DE75E218DA9C2A00630DAF /* Utilities.m in Sources */,
 				F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */,
