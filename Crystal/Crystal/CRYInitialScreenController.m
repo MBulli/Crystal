@@ -36,6 +36,12 @@
 //                      @"Sport": @[@"Fußball", @"Handballd", @"Basketball"],
 //                      @"Lesen": @[],
 //                      @"Architektur": @[]};
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
 }
 
 -(void)viewWillAppear:(BOOL)animated
