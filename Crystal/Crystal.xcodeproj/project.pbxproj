@@ -109,6 +109,10 @@
 		F9DE76CB18DAC41E00630DAF /* Icon1MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76C918DAC41E00630DAF /* Icon1MainNavi.png */; };
 		F9DE76CC18DAC41E00630DAF /* Icon2MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76CA18DAC41E00630DAF /* Icon2MainNavi.png */; };
 		F9DE76CF18DAC85D00630DAF /* CRYSortimentScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */; };
+		F9DE76D718DAD2DF00630DAF /* CRYDetail1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE76D618DAD2DF00630DAF /* CRYDetail1Controller.m */; };
+		F9DE76DA18DAD37F00630DAF /* detail1.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76D818DAD37F00630DAF /* detail1.png */; };
+		F9DE76DB18DAD37F00630DAF /* detail2.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76D918DAD37F00630DAF /* detail2.png */; };
+		F9DE76DD18DAD5B200630DAF /* pfeil.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76DC18DAD5B200630DAF /* pfeil.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,6 +252,11 @@
 		F9DE76CA18DAC41E00630DAF /* Icon2MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2MainNavi.png; sourceTree = "<group>"; };
 		F9DE76CD18DAC85D00630DAF /* CRYSortimentScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYSortimentScreenController.h; sourceTree = "<group>"; };
 		F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYSortimentScreenController.m; sourceTree = "<group>"; };
+		F9DE76D518DAD2DF00630DAF /* CRYDetail1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYDetail1Controller.h; sourceTree = "<group>"; };
+		F9DE76D618DAD2DF00630DAF /* CRYDetail1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYDetail1Controller.m; sourceTree = "<group>"; };
+		F9DE76D818DAD37F00630DAF /* detail1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail1.png; sourceTree = "<group>"; };
+		F9DE76D918DAD37F00630DAF /* detail2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail2.png; sourceTree = "<group>"; };
+		F9DE76DC18DAD5B200630DAF /* pfeil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pfeil.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +290,9 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE76DC18DAD5B200630DAF /* pfeil.png */,
+				F9DE76D818DAD37F00630DAF /* detail1.png */,
+				F9DE76D918DAD37F00630DAF /* detail2.png */,
 				F9DE760018DABBDF00630DAF /* animation */,
 				F9DE76C918DAC41E00630DAF /* Icon1MainNavi.png */,
 				F9DE76CA18DAC41E00630DAF /* Icon2MainNavi.png */,
@@ -445,6 +457,8 @@
 				F9DE75F618DAB39600630DAF /* CRYMainScreenController.m */,
 				F9DE76CD18DAC85D00630DAF /* CRYSortimentScreenController.h */,
 				F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */,
+				F9DE76D518DAD2DF00630DAF /* CRYDetail1Controller.h */,
+				F9DE76D618DAD2DF00630DAF /* CRYDetail1Controller.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -665,6 +679,7 @@
 				F9DE75F418DAAE9E00630DAF /* Pic2MainNavi.png in Resources */,
 				F9DE76A118DAC07B00630DAF /* loading_cart_25.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
+				F9DE76DA18DAD37F00630DAF /* detail1.png in Resources */,
 				F9DE76A218DAC07B00630DAF /* loading_cart_26.png in Resources */,
 				F9DE75E618DAA6E900630DAF /* MainViewFooter.png in Resources */,
 				F9DE76CC18DAC41E00630DAF /* Icon2MainNavi.png in Resources */,
@@ -688,12 +703,14 @@
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				F9DE769718DAC07B00630DAF /* loading_cart_42.png in Resources */,
 				F9DE76BF18DAC07B00630DAF /* loading_cart_7.png in Resources */,
+				F9DE76DD18DAD5B200630DAF /* pfeil.png in Resources */,
 				F9DE76C418DAC07B00630DAF /* loading_cart_1.png in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
 				F9DE76A318DAC07B00630DAF /* loading_cart_27.png in Resources */,
 				F9DE76B018DAC07B00630DAF /* loading_cart_40.png in Resources */,
 				F9DE76B518DAC07B00630DAF /* loading_cart_15.png in Resources */,
 				F9DE76A418DAC07B00630DAF /* loading_cart_28.png in Resources */,
+				F9DE76DB18DAD37F00630DAF /* detail2.png in Resources */,
 				F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */,
 				F9DE76C618DAC07B00630DAF /* loading_cart_3.png in Resources */,
 				F9DE76CB18DAC41E00630DAF /* Icon1MainNavi.png in Resources */,
@@ -738,6 +755,7 @@
 			files = (
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
+				F9DE76D718DAD2DF00630DAF /* CRYDetail1Controller.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */,
 				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
