@@ -10,5 +10,10 @@
 
 @interface UIColor (CRYExt)
 +(UIColor*)blueFontColor;
+
++(UIColor*)blueFontColor02;
++(UIColor*)blueFontColor03;
+
+
 +(UIColor*)whiteBackground;
 @end

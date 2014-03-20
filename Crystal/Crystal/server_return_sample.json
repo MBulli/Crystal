@@ -1,90 +1,120 @@
-[
-//	{
-//		"name":"",
-//		"price":"750",
-//		"currency":"€",
-//		"description":"meine tolle Beschreibung",
-//		"is_ad":true,
-//        "location": "I3.20"
-//	},
-//	{
-//		"name":"Artikel Zeug 2",
-//		"price":"1230",
-//		"currency":"$",
-//		"description":"super toll",
-//		"is_ad":false,
-//        "location": "I3.20"
-//	}
-    {
-        "name":"RedBull",
-        "price":"free",
-        "currency":"",
-        "description":"Energy Drink",
-        "is_ad":false,
-        "location": "I3.20",
-        "in_stock": true,
-        "category_id": 1
-    }
- {
- "name":"Club Mate",
- "price":"free",
- "currency":"",
- "description":"Tea based Energy Drink",
- "is_ad":false,
- "location": "I3.20",
- "in_stock": true,
- "category_id": 1
- }
- {
- "name":"Coca Cola",
- "price":"free",
- "currency":"",
- "description":"Just Coke",
- "is_ad":true,
- "location": "I3.20",
- "in_stock": true,
- "category_id": 1
- }
- {
- "name":"Coca Cola Zero",
- "price":"free",
- "currency":"",
- "description":"Just Coke but Zero",
- "is_ad":false,
- "location": "I3.20",
- "in_stock": true,
- "category_id": 1
- }
- {
- "name":"Wasser",
- "price":"free",
- "currency":"",
- "description":"Tastes like nothing",
- "is_ad":false,
- "location": "I3.20",
- "in_stock": true,
- "category_id": 1
- }
- {
- "name":"Kaffee",
- "price":"free",
- "currency":"",
- "description":"Cofffffffeeeeeeeeeee",
- "is_ad":false,
- "location": "I3.20",
- "in_stock": true,
- "category_id": 1
- }
- {
- "name":"Mars",
- "price":"free",
- "currency":"",
- "description":"Mars",
- "is_ad":false,
- "location": "I3.20",
- "in_stock": true,
- "category_id": 3
- }
-
- 
-]
+[{
+    "name":"Mars",
+    "price":"free",
+    "currency":"",
+    "description":"Mars",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Süßwaren"]
+},
+{
+    "name":"Snickers",
+    "price":"free",
+    "currency":"",
+    "description":"Snickers",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Süßwaren"]
+},
+{
+    "name":"Gummibären",
+    "price":"free",
+    "currency":"",
+    "description":"Gummibären",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category": ["Süßwaren"]
+},
+{
+    "name":"Kaugummi",
+    "price":"free",
+    "currency":"",
+    "description":"Kaugummi",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Süßwaren"]
+},
+{
+    "name":"Lasagne",
+    "price":"free",
+    "currency":"",
+    "description":"Lasagne",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Fertiggerichte"]
+},
+{
+    "name":"Pizza",
+    "price":"free",
+    "currency":"",
+    "description":"Pizza",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Fertiggerichte"]
+},
+{
+    "name":"RedBull",
+    "price":"free",
+    "currency":"",
+    "description":"Energy Drink",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Getränke"]
+},
+{
+    "name":"Club Mate",
+    "price":"free",
+    "currency":"",
+    "description":"Tea based Energy Drink",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Getränke"]
+},
+{
+    "name":"Coca Cola",
+    "price":"free",
+    "currency":"",
+    "description":"Just Coke",
+    "is_ad":true,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Getränke"]
+},
+{
+    "name":"Coca Cola Zero",
+    "price":"free",
+    "currency":"",
+    "description":"Just Coke but Zero",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Getränke"]
+},
+{
+    "name":"Wasser",
+    "price":"free",
+    "currency":"",
+    "description":"Tastes like nothing",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Getränke"]
+},
+{
+    "name":"Kaffee",
+    "price":"free",
+    "currency":"",
+    "description":"Cofffffffeeeeeeeeeee",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true,
+    "category":["Getränke"]
+}]
