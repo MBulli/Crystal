@@ -11,9 +11,6 @@
 @interface CRYStartScreenController : UIViewController
 
 
-@property (weak, nonatomic) IBOutlet UIView *CRYLogoBig;
-@property (weak, nonatomic) IBOutlet UIButton *favoritesButton;
-@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
 @property (weak, nonatomic) IBOutlet UIImageView *animatedImageView;
 
 

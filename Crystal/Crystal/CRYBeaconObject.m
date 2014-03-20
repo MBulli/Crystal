@@ -23,7 +23,7 @@
 	CRYBeaconObject *obj = [[super alloc] init];
 	if (obj) {
 		obj.__id = beacon_id;
-		obj.__articles = nil;
+		obj.__articles = [obj articles];
 	}
 	return obj;
 }
@@ -62,10 +62,10 @@
 
 -(void)filterArray:(NSString*)searchString {
 	if (searchString.length<=0) {
-		self.filteredArticles = __articles;
+		self.filteredArticles = [self articles];
 	} else {
 		NSPredicate *pred = [NSPredicate predicateWithFormat:@"name CONTAINS[c] %@ || description CONTAINS[c] %@",searchString,searchString];
-		self.filteredArticles = [self.articles filteredArrayUsingPredicate:pred];
+		self.filteredArticles = [[self articles] filteredArrayUsingPredicate:pred];
 	}
 }
 
