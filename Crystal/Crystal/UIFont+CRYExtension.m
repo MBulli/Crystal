@@ -22,7 +22,7 @@
 
 +(UIFont *)ProximaNovaCondSemiboldWithSize:(CGFloat)size
 {
-    return [UIFont fontWithName:@"Proxima Nova Condensed" size:size];
+    return [UIFont fontWithName:@"ProximaNovaCond-Semibold" size:size];
 }
 
 @end

@@ -1,20 +1,20 @@
 //
-//  CRYLabel.m
+//  CRYButton.m
 //  Crystal
 //
 //  Created by Steffen on 20.03.14.
 //  Copyright (c) 2014 Crystal Corp. All rights reserved.
 //
 
-#import "CRYLabel.h"
+#import "CRYButton.h"
 
-@implementation CRYLabel
+@implementation CRYButton
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [CRYLabel designLabel:self];
+        [CRYButton designButton:self];
     }
     return self;
 }
@@ -23,7 +23,7 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [CRYLabel designLabel:self];
+        [CRYButton designButton:self];
     }
     return self;
 }
@@ -38,18 +38,20 @@
 */
 
 
-+(void)designLabel:(UILabel *)label
++(void)designButton:(UIButton *)button
 {
-    if ([label.font.fontName hasSuffix:@"MediumP4"]) {
-        label.font = [UIFont ProximaNovaCondSemiboldWithSize:label.font.pointSize];
+    if ([button.font.fontName hasSuffix:@"MediumP4"]) {
+        button.font = [UIFont ProximaNovaCondSemiboldWithSize:button.font.pointSize];
     }
-    if ([label.font.fontName hasSuffix:@"Light"]) {
-        label.font = [UIFont ProximaNovaCondLightWithSize:label.font.pointSize];
+    if ([button.font.fontName hasSuffix:@"Light"]) {
+        button.font = [UIFont ProximaNovaCondLightWithSize:button.font.pointSize];
     }
     else {
-        label.font = [UIFont ProximaNovaCondRegularWithSize:label.font.pointSize];
+        button.font = [UIFont ProximaNovaCondRegularWithSize:button.font.pointSize];
     }
     
 }
+
+
 
 @end
