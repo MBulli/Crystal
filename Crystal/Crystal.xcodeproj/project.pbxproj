@@ -29,9 +29,8 @@
 		AE55CE0B18DA3A7A0015E03B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */; };
 		AE55CE0D18DA3A7F0015E03B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */; };
 		AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */; };
-		F9F6A21118DA643700354397 /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F6A21018DA643700354397 /* logo_placeholder.png */; };
-		F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */; };
-		F9F6A21518DA6FAE00354397 /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */; };
+		AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */; };
+		AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +72,14 @@
 		AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F9F6A20B18DA554F00354397 /* CRYStartScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYStartScreenController.h; sourceTree = "<group>"; };
-		F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYStartScreenController.m; sourceTree = "<group>"; };
-		F9F6A21018DA643700354397 /* logo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_placeholder.png; sourceTree = "<group>"; };
-		F9F6A21218DA64BC00354397 /* CRYInitialScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInitialScreenController.h; sourceTree = "<group>"; };
-		F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInitialScreenController.m; sourceTree = "<group>"; };
+		AE55CE1518DA3F330015E03B /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
+		AE55CE1618DA3F330015E03B /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		AE55CE1718DA3F330015E03B /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
+		AE55CE1818DA3F330015E03B /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
+		AE55CE1918DA3F330015E03B /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconManager.h; sourceTree = "<group>"; };
+		AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				AE55CDD118DA35160015E03B /* CoreGraphics.framework in Frameworks */,
 				AE55CDD318DA35160015E03B /* UIKit.framework in Frameworks */,
 				AE55CDCF18DA35160015E03B /* Foundation.framework in Frameworks */,
+				AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +168,10 @@
 				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
 				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
+				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
-				F9F6A1FF18DA412300354397 /* Resources */,
+				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
+				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 			);
 			path = Crystal;
 			sourceTree = "<group>";
@@ -203,7 +208,6 @@
 		AE55CE0618DA35540015E03B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F9F6A20018DA419100354397 /* Startscreen */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -220,10 +224,6 @@
 		AE55CE0818DA35680015E03B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F9F6A20B18DA554F00354397 /* CRYStartScreenController.h */,
-				F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */,
-				F9F6A21218DA64BC00354397 /* CRYInitialScreenController.h */,
-				F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -235,29 +235,33 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		F9F6A1FE18DA40F700354397 /* Storyboard */ = {
+		AE55CE1218DA3F330015E03B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
-				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
+				AE55CE1318DA3F330015E03B /* EstimoteSDK */,
 			);
-			name = Storyboard;
+			path = Vendor;
 			sourceTree = "<group>";
 		};
-		F9F6A1FF18DA412300354397 /* Resources */ = {
+		AE55CE1318DA3F330015E03B /* EstimoteSDK */ = {
 			isa = PBXGroup;
 			children = (
-				F9F6A21018DA643700354397 /* logo_placeholder.png */,
-				F9F6A1FE18DA40F700354397 /* Storyboard */,
+				AE55CE1418DA3F330015E03B /* Headers */,
+				AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */,
 			);
-			name = Resources;
+			path = EstimoteSDK;
 			sourceTree = "<group>";
 		};
-		F9F6A20018DA419100354397 /* Startscreen */ = {
+		AE55CE1418DA3F330015E03B /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				AE55CE1518DA3F330015E03B /* ESTBeacon.h */,
+				AE55CE1618DA3F330015E03B /* ESTBeaconDefinitions.h */,
+				AE55CE1718DA3F330015E03B /* ESTBeaconManager.h */,
+				AE55CE1818DA3F330015E03B /* ESTBeaconRegion.h */,
+				AE55CE1918DA3F330015E03B /* ESTBeaconUpdateInfo.h */,
 			);
-			name = Startscreen;
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +312,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Crystal Corp.";
 				TargetAttributes = {
+					AE55CDCA18DA35160015E03B = {
+						DevelopmentTeam = MXGKQ725V4;
+					};
 					AE55CDEE18DA35160015E03B = {
 						TestTargetID = AE55CDCA18DA35160015E03B;
 					};
@@ -337,7 +344,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F6A21118DA643700354397 /* logo_placeholder.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
@@ -361,11 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F6A21518DA6FAE00354397 /* CRYStartScreenController.m in Sources */,
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
-				F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */,
+				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 			);
@@ -503,11 +508,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crystal/Crystal-Prefix.pch";
 				INFOPLIST_FILE = "Crystal/Crystal-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crystal/Vendor/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58963774-0F49-4692-84BF-1AD6E68DA1AC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -517,11 +528,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crystal/Crystal-Prefix.pch";
 				INFOPLIST_FILE = "Crystal/Crystal-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crystal/Vendor/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58963774-0F49-4692-84BF-1AD6E68DA1AC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
