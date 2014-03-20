@@ -4,11 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Start Screen Controller-->
+        <!--View Controller-->
         <scene sceneID="lDd-bt-U6g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kp9-R1-Ude" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="CRYInitialScreenController" id="vNB-Al-0Qh" customClass="CRYStartScreenController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CRYInitialScreenController" id="vNB-Al-0Qh" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UUc-hq-OxJ"/>
                         <viewControllerLayoutGuide type="bottom" id="SXF-4b-Acq"/>
@@ -19,6 +18,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kp9-R1-Ude" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-484" y="-556"/>
         </scene>
@@ -88,7 +88,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5M0-fU-7Bk"/>
                     <connections>
-                        <outlet property="CRYLogoBig" destination="XdV-h5-bba" id="Gh9-iP-Ioe"/>
+                        <outlet property="CRYLogoBig" destination="sFz-4G-4dm" id="8rM-cV-vGw"/>
                         <outlet property="favoritesButton" destination="5DB-Uc-KmN" id="cYv-P0-g8h"/>
                         <outlet property="settingsButton" destination="8Vz-Gx-QFE" id="S42-ur-PDv"/>
                     </connections>

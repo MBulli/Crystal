@@ -29,9 +29,9 @@
 		AE55CE0B18DA3A7A0015E03B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */; };
 		AE55CE0D18DA3A7F0015E03B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */; };
 		AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */; };
-		F9F6A20E18DA554F00354397 /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */; };
 		F9F6A21118DA643700354397 /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F6A21018DA643700354397 /* logo_placeholder.png */; };
 		F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */; };
+		F9F6A21518DA6FAE00354397 /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +161,9 @@
 				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
 				AE55CE0918DA35740015E03B /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
+				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
+				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
+				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
 				AE55CE0618DA35540015E03B /* View */,
 				F9F6A1FF18DA412300354397 /* Resources */,
@@ -358,8 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F6A21518DA6FAE00354397 /* CRYStartScreenController.m in Sources */,
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
-				F9F6A20E18DA554F00354397 /* CRYStartScreenController.m in Sources */,
+				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
