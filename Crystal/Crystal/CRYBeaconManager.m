@@ -84,10 +84,17 @@
 -(void)beaconManager:(ESTBeaconManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(ESTBeaconRegion *)region
 {
     for (ESTBeacon* beacon  in beacons) {
-    NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
-    [self displayRegionAlert:region withTitle:string];
+        NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
+        [self displayRegionAlert:region withTitle:string];
+        if(beacon.distance.integerValue == -1)
+        {
+            self.isBeaconInRange = false;
+        }
     }
-      // [self displayRegionAlert:region withTitle:<#(NSString *)#>]
+    if(beacons.count == 0)
+    {
+        self.isBeaconInRange = false;
+    }
 }
 
 -(void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
