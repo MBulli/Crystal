@@ -17,9 +17,7 @@
 		2831ACBA18DAD53B00AD6DD6 /* ArticleSlice5_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831ACAD18DAD53B00AD6DD6 /* ArticleSlice5_08.png */; };
 		2831ACBB18DAD53B00AD6DD6 /* ArticleSlice5_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831ACAE18DAD53B00AD6DD6 /* ArticleSlice5_09.png */; };
 		2831ACBC18DAD53B00AD6DD6 /* ArticleSlice5_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831ACAF18DAD53B00AD6DD6 /* ArticleSlice5_10.png */; };
-		2831ACBD18DAD53B00AD6DD6 /* ArticleSlice5_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831ACB018DAD53B00AD6DD6 /* ArticleSlice5_11.png */; };
 		2831ACBE18DAD53B00AD6DD6 /* ArticleSlice5_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831ACB118DAD53B00AD6DD6 /* ArticleSlice5_12.png */; };
-		2831ACBF18DAD53B00AD6DD6 /* ArticleSlice5_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831ACB218DAD53B00AD6DD6 /* ArticleSlice5_13.png */; };
 		2831ACC218DAD54B00AD6DD6 /* CRYCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2831ACC118DAD54B00AD6DD6 /* CRYCategoryViewController.m */; };
 		2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2834F90018DA9D5B00C4F507 /* CRYLoading.m */; };
 		2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */; };
@@ -149,9 +147,7 @@
 		2831ACAD18DAD53B00AD6DD6 /* ArticleSlice5_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_08.png; sourceTree = "<group>"; };
 		2831ACAE18DAD53B00AD6DD6 /* ArticleSlice5_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_09.png; sourceTree = "<group>"; };
 		2831ACAF18DAD53B00AD6DD6 /* ArticleSlice5_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_10.png; sourceTree = "<group>"; };
-		2831ACB018DAD53B00AD6DD6 /* ArticleSlice5_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_11.png; sourceTree = "<group>"; };
 		2831ACB118DAD53B00AD6DD6 /* ArticleSlice5_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_12.png; sourceTree = "<group>"; };
-		2831ACB218DAD53B00AD6DD6 /* ArticleSlice5_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_13.png; sourceTree = "<group>"; };
 		2831ACC018DAD54B00AD6DD6 /* CRYCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYCategoryViewController.h; sourceTree = "<group>"; };
 		2831ACC118DAD54B00AD6DD6 /* CRYCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYCategoryViewController.m; sourceTree = "<group>"; };
 		2834F8FF18DA9D5B00C4F507 /* CRYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYLoading.h; sourceTree = "<group>"; };
@@ -330,9 +326,7 @@
 				2831ACAD18DAD53B00AD6DD6 /* ArticleSlice5_08.png */,
 				2831ACAE18DAD53B00AD6DD6 /* ArticleSlice5_09.png */,
 				2831ACAF18DAD53B00AD6DD6 /* ArticleSlice5_10.png */,
-				2831ACB018DAD53B00AD6DD6 /* ArticleSlice5_11.png */,
 				2831ACB118DAD53B00AD6DD6 /* ArticleSlice5_12.png */,
-				2831ACB218DAD53B00AD6DD6 /* ArticleSlice5_13.png */,
 				F9DE760018DABBDF00630DAF /* animation */,
 				F9DE76C918DAC41E00630DAF /* Icon1MainNavi.png */,
 				F9DE76CA18DAC41E00630DAF /* Icon2MainNavi.png */,
@@ -719,7 +713,6 @@
 				F9DE75E618DAA6E900630DAF /* MainViewFooter.png in Resources */,
 				F9DE76CC18DAC41E00630DAF /* Icon2MainNavi.png in Resources */,
 				F9DE769918DAC07B00630DAF /* loading_cart_44.png in Resources */,
-				2831ACBD18DAD53B00AD6DD6 /* ArticleSlice5_11.png in Resources */,
 				2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */,
 				F9DE75F918DAB62000630DAF /* Logo.png in Resources */,
 				F9DE769818DAC07B00630DAF /* loading_cart_43.png in Resources */,
@@ -766,7 +759,6 @@
 				F9DE76AD18DAC07B00630DAF /* loading_cart_37.png in Resources */,
 				F9DE76A918DAC07B00630DAF /* loading_cart_33.png in Resources */,
 				F9DE76BE18DAC07B00630DAF /* loading_cart_6.png in Resources */,
-				2831ACBF18DAD53B00AD6DD6 /* ArticleSlice5_13.png in Resources */,
 				F9DE76B418DAC07B00630DAF /* loading_cart_14.png in Resources */,
 				F9DE76BB18DAC07B00630DAF /* loading_cart_21.png in Resources */,
 				F9DE76B718DAC07B00630DAF /* loading_cart_17.png in Resources */,
