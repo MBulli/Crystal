@@ -1,0 +1,51 @@
+[{
+    "name":"Literatur",
+    "content":[{
+               "name":"Romane",
+               "content":[]
+               }]
+},
+{
+    "name":"Entertainment",
+    "content":[{
+            "name":"Musik",
+            "content":[]
+            },
+            {
+            "name":"Filme",
+            "content":[]
+            },
+            {
+            "name":"Videospiele",
+            "content":[{
+                       "name":"Action",
+                       "content":[]
+                       },
+                       {
+                       "name":"Adventure",
+                       "content":[]
+                       },
+                       {
+                       "name":"Rollenspiele",
+                       "content":[]
+                       }]
+            }]
+ },
+ {
+    "name":"Lebensmittel",
+    "content": [{
+                "name":"Nahrungsmittel",
+                "content":[{
+                           "name":"Süßwaren",
+                           "content":[]
+                           },
+                           {
+                           "name":"Fertiggerichte",
+                           "content":[]
+                           }]
+                },
+                {
+                    "name":"Getränke",
+                    "content":[]
+                }]
+ }]

@@ -1,146 +1,110 @@
- [
-  [
-   {
-   "Literatur":[
-				"Romane":[
-				]
-                ]
-   "Entertainment":[
-                    "Musik":[
-                    ]
-                    "Filme":[
-                    ]
-                    "Videospiele":[
-                                   "Action":[
-                                   ]
-                                   "Adventure":[
-                                   ]
-                                   "Rollenspiele":[
-                                   ]
-                                   ]
-                    ]
-   "Lebensmittel":[
-                   "Nahrungsmittel":[
-                                     "Süßwaren":[
-                                                 {
-                                                 "name":"Mars",
-                                                 "price":"free",
-                                                 "currency":"",
-                                                 "description":"Mars",
-                                                 "is_ad":false,
-                                                 "location": "I3.20",
-                                                 "in_stock": true
-                                                 }
-                                                 {
-                                                 "name":"Snickers",
-                                                 "price":"free",
-                                                 "currency":"",
-                                                 "description":"Snickers",
-                                                 "is_ad":false,
-                                                 "location": "I3.20",
-                                                 "in_stock": true
-                                                 }
-                                                 {
-                                                 "name":"Gummibären",
-                                                 "price":"free",
-                                                 "currency":"",
-                                                 "description":"Gummibären",
-                                                 "is_ad":false,
-                                                 "location": "I3.20",
-                                                 "in_stock": true
-                                                 }
-                                                 {
-                                                 "name":"Kaugummi",
-                                                 "price":"free",
-                                                 "currency":"",
-                                                 "description":"Kaugummi",
-                                                 "is_ad":false,
-                                                 "location": "I3.20",
-                                                 "in_stock": true
-                                                 }
-                                                 ]
-                                     "Fertiggerichte":[
-                                                       {
-                                                       "name":"Lasagne",
-                                                       "price":"free",
-                                                       "currency":"",
-                                                       "description":"Lasagne",
-                                                       "is_ad":false,
-                                                       "location": "I3.20",
-                                                       "in_stock": true
-                                                       }
-                                                       {
-                                                       "name":"Pizza",
-                                                       "price":"free",
-                                                       "currency":"",
-                                                       "description":"Pizza",
-                                                       "is_ad":false,
-                                                       "location": "I3.20",
-                                                       "in_stock": true
-                                                       }
-                                                       ]
-                                     ]
-                   "Getränke":[
-                               {
-                               "name":"RedBull",
-                               "price":"free",
-                               "currency":"",
-                               "description":"Energy Drink",
-                               "is_ad":false,
-                               "location": "I3.20",
-                               "in_stock": true
-                               
-                               }
-                               {
-                               "name":"Club Mate",
-                               "price":"free",
-                               "currency":"",
-                               "description":"Tea based Energy Drink",
-                               "is_ad":false,
-                               "location": "I3.20",
-                               "in_stock": true
-                               }
-                               {
-                               "name":"Coca Cola",
-                               "price":"free",
-                               "currency":"",
-                               "description":"Just Coke",
-                               "is_ad":true,
-                               "location": "I3.20",
-                               "in_stock": true
-                               }
-                               {
-                               "name":"Coca Cola Zero",
-                               "price":"free",
-                               "currency":"",
-                               "description":"Just Coke but Zero",
-                               "is_ad":false,
-                               "location": "I3.20",
-                               "in_stock": true
-                               }
-                               {
-                               "name":"Wasser",
-                               "price":"free",
-                               "currency":"",
-                               "description":"Tastes like nothing",
-                               "is_ad":false,
-                               "location": "I3.20",
-                               "in_stock": true
-                               }
-                               {
-                               "name":"Kaffee",
-                               "price":"free",
-                               "currency":"",
-                               "description":"Cofffffffeeeeeeeeeee",
-                               "is_ad":false,
-                               "location": "I3.20",
-                               "in_stock": true
-                               }
-                               ]
-                   ]
-   }
-   ]
-  
-  
-  
-  ]
+[
+{
+    "name":"Mars",
+    "price":"free",
+    "currency":"",
+    "description":"Mars",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Snickers",
+    "price":"free",
+    "currency":"",
+    "description":"Snickers",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Gummibären",
+    "price":"free",
+    "currency":"",
+    "description":"Gummibären",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Kaugummi",
+    "price":"free",
+    "currency":"",
+    "description":"Kaugummi",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Lasagne",
+    "price":"free",
+    "currency":"",
+    "description":"Lasagne",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Pizza",
+    "price":"free",
+    "currency":"",
+    "description":"Pizza",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"RedBull",
+    "price":"free",
+    "currency":"",
+    "description":"Energy Drink",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Club Mate",
+    "price":"free",
+    "currency":"",
+    "description":"Tea based Energy Drink",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Coca Cola",
+    "price":"free",
+    "currency":"",
+    "description":"Just Coke",
+    "is_ad":true,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Coca Cola Zero",
+    "price":"free",
+    "currency":"",
+    "description":"Just Coke but Zero",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Wasser",
+    "price":"free",
+    "currency":"",
+    "description":"Tastes like nothing",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+},
+{
+    "name":"Kaffee",
+    "price":"free",
+    "currency":"",
+    "description":"Cofffffffeeeeeeeeeee",
+    "is_ad":false,
+    "location": "I3.20",
+    "in_stock": true
+}
+]
