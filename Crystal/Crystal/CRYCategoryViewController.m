@@ -8,7 +8,7 @@
 
 #import "CRYCategoryViewController.h"
 
-
+#import "CRYUserSettings.h"
 
 @interface CRYFlowLayout : UICollectionViewFlowLayout
 
@@ -44,6 +44,10 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    if ([[CRYUserSettings loadCategories] containsObject:@"Gemüse"]) {
+        self.gemüse.imageView.image = [UIImage imageNamed:@"ArticleSlice5_06"];
+    }
+    
     for (UIView *view in self.scrollView.subviews) {
         
         CGFloat dur = (arc4random() % 10) / 10.0;

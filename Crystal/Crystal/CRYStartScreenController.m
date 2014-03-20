@@ -127,9 +127,7 @@
         self.timer = nil;
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         
-        [self performSegueWithIdentifier: @"seg_beacon" sender:self];
-        
-
+        [self performSegueWithIdentifier: @"seg_beacon1" sender:self];
     }
     else if(self.manager.isBeaconInRange2)
     {
@@ -137,7 +135,7 @@
         self.timer = nil;
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         
-        [self performSegueWithIdentifier: @"dfgh" sender:self];
+        [self performSegueWithIdentifier: @"seg_beacon2" sender:self];
     }
     else
     {
