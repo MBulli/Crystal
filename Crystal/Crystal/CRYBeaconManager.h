@@ -26,6 +26,7 @@
 @property(nonatomic, strong) NSMutableArray* beaconRegion;
 @property(nonatomic, strong) NSMutableArray* identifier;
 @property(nonatomic, assign) BOOL isBeaconInRange;
+@property(nonatomic, assign) BOOL isBeaconInRange2;
 
 @property(nonatomic, weak) NSObject<CRYBeaconManagerDelegate> *delegate;
 @end
