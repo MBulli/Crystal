@@ -14,8 +14,6 @@
 @interface CRYViewController ()
 
 @property(nonatomic, strong) CRYBeaconManager* manager;
-@property(nonatomic, strong) ESTBeaconManager* beaconManager;
-@property(nonatomic, strong) ESTBeaconRegion* beaconRegion;
 @end
 
 @implementation CRYViewController
@@ -37,13 +35,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
-
-
-
-
 
 
 @end
