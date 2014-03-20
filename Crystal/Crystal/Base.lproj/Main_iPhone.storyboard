@@ -184,26 +184,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E8e-to-dS8">
-                                <rect key="frame" x="99" y="480" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="geh zur liste temp">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="811-Yf-HGU" kind="push" id="sBl-GH-Wly"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cli-I2-9Vb">
-                                <rect key="frame" x="132" y="518" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="goto fail">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eTM-eh-4fr" kind="push" id="PZP-vB-Nc2"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" id="aQw-52-btX" customClass="CRYLoading">
                                 <rect key="frame" x="144" y="242" width="32" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,7 +205,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="5M0-fU-7Bk"/>
                     <connections>
-                        <outlet property="animatedImageView" destination="yev-hb-5LE" id="2Ac-F5-iyc"/>
+                        <segue destination="eTM-eh-4fr" kind="push" identifier="seg_nobeacon" id="z6E-BC-Avh"/>
+                        <segue destination="811-Yf-HGU" kind="push" identifier="seg_beacon" id="u61-xe-sSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQP-Fk-j6Q" sceneMemberID="firstResponder"/>
