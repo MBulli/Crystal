@@ -65,10 +65,11 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"initScreenShown"];
         
         CRYInitialScreenController *initSetup = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"CRYInitialScreenController"];
-        [initSetup setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+        [initSetup setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
         [self presentViewController:initSetup animated:YES completion:nil];
     }
     
+    self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:2.2];
 
     [self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
 
