@@ -31,6 +31,9 @@
 		AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */; };
 		AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */; };
 		AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */; };
+		F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4118DA7D4100A1E17D /* logo_placeholder.png */; };
+		F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */; };
+		F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,11 @@
 		AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
 		AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconManager.h; sourceTree = "<group>"; };
 		AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconManager.m; sourceTree = "<group>"; };
+		F9913F4118DA7D4100A1E17D /* logo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_placeholder.png; sourceTree = "<group>"; };
+		F9913F4618DA7DA100A1E17D /* CRYInitialScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInitialScreenController.h; sourceTree = "<group>"; };
+		F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInitialScreenController.m; sourceTree = "<group>"; };
+		F9913F4818DA7DA100A1E17D /* CRYStartScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYStartScreenController.h; sourceTree = "<group>"; };
+		F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYStartScreenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,12 +172,11 @@
 				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
 				AE55CE0918DA35740015E03B /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
-				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
-				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
 				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
 				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
+				F9913F4018DA7D0600A1E17D /* Resources */,
 				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
 				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 			);
@@ -224,6 +231,10 @@
 		AE55CE0818DA35680015E03B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F9913F4618DA7DA100A1E17D /* CRYInitialScreenController.h */,
+				F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */,
+				F9913F4818DA7DA100A1E17D /* CRYStartScreenController.h */,
+				F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -262,6 +273,16 @@
 				AE55CE1918DA3F330015E03B /* ESTBeaconUpdateInfo.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		F9913F4018DA7D0600A1E17D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
+				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
+				F9913F4118DA7D4100A1E17D /* logo_placeholder.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +369,7 @@
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
+				F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */,
 				AE55CDD918DA35160015E03B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +393,8 @@
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
+				F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */,
+				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 			);
