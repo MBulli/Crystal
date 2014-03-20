@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2831AC8318DAB2AF00AD6DD6 /* CRYCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2831AC8218DAB2AF00AD6DD6 /* CRYCategoryViewController.m */; };
+		2831AC9918DACDE300AD6DD6 /* ArticleSlice5_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC8C18DACDE300AD6DD6 /* ArticleSlice5_01.png */; };
+		2831AC9A18DACDE300AD6DD6 /* ArticleSlice5_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC8D18DACDE300AD6DD6 /* ArticleSlice5_02.png */; };
+		2831AC9B18DACDE300AD6DD6 /* ArticleSlice5_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC8E18DACDE300AD6DD6 /* ArticleSlice5_03.png */; };
+		2831AC9C18DACDE300AD6DD6 /* ArticleSlice5_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC8F18DACDE300AD6DD6 /* ArticleSlice5_04.png */; };
+		2831AC9D18DACDE300AD6DD6 /* ArticleSlice5_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9018DACDE300AD6DD6 /* ArticleSlice5_05.png */; };
+		2831AC9E18DACDE300AD6DD6 /* ArticleSlice5_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9118DACDE300AD6DD6 /* ArticleSlice5_06.png */; };
+		2831AC9F18DACDE300AD6DD6 /* ArticleSlice5_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9218DACDE300AD6DD6 /* ArticleSlice5_07.png */; };
+		2831ACA018DACDE300AD6DD6 /* ArticleSlice5_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9318DACDE300AD6DD6 /* ArticleSlice5_08.png */; };
+		2831ACA118DACDE300AD6DD6 /* ArticleSlice5_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9418DACDE300AD6DD6 /* ArticleSlice5_09.png */; };
+		2831ACA218DACDE300AD6DD6 /* ArticleSlice5_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9518DACDE300AD6DD6 /* ArticleSlice5_10.png */; };
+		2831ACA318DACDE300AD6DD6 /* ArticleSlice5_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9618DACDE300AD6DD6 /* ArticleSlice5_11.png */; };
+		2831ACA418DACDE300AD6DD6 /* ArticleSlice5_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9718DACDE300AD6DD6 /* ArticleSlice5_12.png */; };
+		2831ACA518DACDE300AD6DD6 /* ArticleSlice5_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831AC9818DACDE300AD6DD6 /* ArticleSlice5_13.png */; };
 		2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2834F90018DA9D5B00C4F507 /* CRYLoading.m */; };
 		2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */; };
 		2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848784518DA89870083F812 /* UIColor+CRYExt.m */; };
@@ -61,6 +75,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2831AC8118DAB2AF00AD6DD6 /* CRYCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYCategoryViewController.h; sourceTree = "<group>"; };
+		2831AC8218DAB2AF00AD6DD6 /* CRYCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYCategoryViewController.m; sourceTree = "<group>"; };
+		2831AC8C18DACDE300AD6DD6 /* ArticleSlice5_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_01.png; sourceTree = "<group>"; };
+		2831AC8D18DACDE300AD6DD6 /* ArticleSlice5_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_02.png; sourceTree = "<group>"; };
+		2831AC8E18DACDE300AD6DD6 /* ArticleSlice5_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_03.png; sourceTree = "<group>"; };
+		2831AC8F18DACDE300AD6DD6 /* ArticleSlice5_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_04.png; sourceTree = "<group>"; };
+		2831AC9018DACDE300AD6DD6 /* ArticleSlice5_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_05.png; sourceTree = "<group>"; };
+		2831AC9118DACDE300AD6DD6 /* ArticleSlice5_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_06.png; sourceTree = "<group>"; };
+		2831AC9218DACDE300AD6DD6 /* ArticleSlice5_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_07.png; sourceTree = "<group>"; };
+		2831AC9318DACDE300AD6DD6 /* ArticleSlice5_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_08.png; sourceTree = "<group>"; };
+		2831AC9418DACDE300AD6DD6 /* ArticleSlice5_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_09.png; sourceTree = "<group>"; };
+		2831AC9518DACDE300AD6DD6 /* ArticleSlice5_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_10.png; sourceTree = "<group>"; };
+		2831AC9618DACDE300AD6DD6 /* ArticleSlice5_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_11.png; sourceTree = "<group>"; };
+		2831AC9718DACDE300AD6DD6 /* ArticleSlice5_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_12.png; sourceTree = "<group>"; };
+		2831AC9818DACDE300AD6DD6 /* ArticleSlice5_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArticleSlice5_13.png; sourceTree = "<group>"; };
 		2834F8FF18DA9D5B00C4F507 /* CRYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYLoading.h; sourceTree = "<group>"; };
 		2834F90018DA9D5B00C4F507 /* CRYLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYLoading.m; sourceTree = "<group>"; };
 		2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYQuestionDetailViewController.h; sourceTree = "<group>"; };
@@ -156,6 +185,19 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2831AC8C18DACDE300AD6DD6 /* ArticleSlice5_01.png */,
+				2831AC8D18DACDE300AD6DD6 /* ArticleSlice5_02.png */,
+				2831AC8E18DACDE300AD6DD6 /* ArticleSlice5_03.png */,
+				2831AC8F18DACDE300AD6DD6 /* ArticleSlice5_04.png */,
+				2831AC9018DACDE300AD6DD6 /* ArticleSlice5_05.png */,
+				2831AC9118DACDE300AD6DD6 /* ArticleSlice5_06.png */,
+				2831AC9218DACDE300AD6DD6 /* ArticleSlice5_07.png */,
+				2831AC9318DACDE300AD6DD6 /* ArticleSlice5_08.png */,
+				2831AC9418DACDE300AD6DD6 /* ArticleSlice5_09.png */,
+				2831AC9518DACDE300AD6DD6 /* ArticleSlice5_10.png */,
+				2831AC9618DACDE300AD6DD6 /* ArticleSlice5_11.png */,
+				2831AC9718DACDE300AD6DD6 /* ArticleSlice5_12.png */,
+				2831AC9818DACDE300AD6DD6 /* ArticleSlice5_13.png */,
 				F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */,
 				2848784B18DA8CA20083F812 /* FooterArrow.png */,
 				2848784C18DA8CA20083F812 /* HeaderClear.png */,
@@ -307,6 +349,8 @@
 				F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */,
 				2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */,
 				2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */,
+				2831AC8118DAB2AF00AD6DD6 /* CRYCategoryViewController.h */,
+				2831AC8218DAB2AF00AD6DD6 /* CRYCategoryViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -452,17 +496,30 @@
 			files = (
 				AE55CE2018DAA2A60015E03B /* categories.json in Resources */,
 				F9DE75DA18DA8F1900630DAF /* ProximaNovaCondRegular.ttf in Resources */,
+				2831ACA018DACDE300AD6DD6 /* ArticleSlice5_08.png in Resources */,
+				2831AC9F18DACDE300AD6DD6 /* ArticleSlice5_07.png in Resources */,
+				2831AC9B18DACDE300AD6DD6 /* ArticleSlice5_03.png in Resources */,
+				2831ACA218DACDE300AD6DD6 /* ArticleSlice5_10.png in Resources */,
+				2831AC9A18DACDE300AD6DD6 /* ArticleSlice5_02.png in Resources */,
+				2831AC9918DACDE300AD6DD6 /* ArticleSlice5_01.png in Resources */,
 				F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */,
+				2831ACA518DACDE300AD6DD6 /* ArticleSlice5_13.png in Resources */,
 				F9DE75DB18DA8F1900630DAF /* ProximaNovaCondLight.ttf in Resources */,
 				F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */,
+				2831ACA118DACDE300AD6DD6 /* ArticleSlice5_09.png in Resources */,
+				2831ACA418DACDE300AD6DD6 /* ArticleSlice5_12.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
 				2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */,
+				2831AC9E18DACDE300AD6DD6 /* ArticleSlice5_06.png in Resources */,
 				2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
+				2831ACA318DACDE300AD6DD6 /* ArticleSlice5_11.png in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
+				2831AC9D18DACDE300AD6DD6 /* ArticleSlice5_05.png in Resources */,
 				F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */,
 				AE55CDD918DA35160015E03B /* InfoPlist.strings in Resources */,
+				2831AC9C18DACDE300AD6DD6 /* ArticleSlice5_04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
+				2831AC8318DAB2AF00AD6DD6 /* CRYCategoryViewController.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */,
