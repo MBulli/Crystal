@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *angebotButton;
 @property (weak, nonatomic) IBOutlet UIButton *sortimentButton;
 
+@property(nonatomic, assign) BOOL Beacon1;
+@property(nonatomic, assign) BOOL Beacon2;
 
 - (IBAction)tappedAngebotButton:(id)sender;
 - (IBAction)tappedSortimentButton:(id)sender;

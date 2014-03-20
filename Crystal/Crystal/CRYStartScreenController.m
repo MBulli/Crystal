@@ -12,6 +12,7 @@
 #import "CRYBeaconManager.h"
 #import "CRYBeaconObject.h"
 #import "CRYUserSettings.h"
+#import "CRYMainScreenController.h"
 
 @interface CRYStartScreenController ()
 @property(nonatomic, strong) NSTimer *timer;
@@ -99,7 +100,15 @@
     [self performSegueWithIdentifier: @"seg_nobeacon" sender: self];
 }
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier hasPrefix:@"seg_beacon"]) {
+        CRYMainScreenController *main = (CRYMainScreenController*)segue.destinationViewController;
+        
+        main.Beacon1 = self.manager.isBeaconInRange;
+        main.Beacon2 = self.manager.isBeaconInRange2;
+    }
+}
 
 -(void)timerTick
 {
