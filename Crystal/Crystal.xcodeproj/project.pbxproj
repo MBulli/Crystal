@@ -44,6 +44,7 @@
 		F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4F18DA826B00A1E17D /* ProximaNovaCondSemibold.ttf */; };
 		F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */; };
 		F9DE75E218DA9C2A00630DAF /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75E018DA9C2A00630DAF /* Utilities.m */; };
+		F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CRYExtension.m"; sourceTree = "<group>"; };
 		F9DE75DF18DA9C2A00630DAF /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		F9DE75E018DA9C2A00630DAF /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainViewFooterLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */,
 				2848784B18DA8CA20083F812 /* FooterArrow.png */,
 				2848784C18DA8CA20083F812 /* HeaderClear.png */,
 			);
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9DE75DA18DA8F1900630DAF /* ProximaNovaCondRegular.ttf in Resources */,
+				F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */,
 				F9DE75DB18DA8F1900630DAF /* ProximaNovaCondLight.ttf in Resources */,
 				F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
