@@ -1,6 +1,6 @@
 [
 	{
-		"name":"Artikel 1",
+		"name":"Artikel Traum 1",
 		"price":"750",
 		"currency":"€",
 		"description":"meine tolle Beschreibung",
@@ -8,7 +8,7 @@
         "location": "I3.20"
 	},
 	{
-		"name":"Artikel 2",
+		"name":"Artikel Zeug 2",
 		"price":"1230",
 		"currency":"$",
 		"description":"super toll",
