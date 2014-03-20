@@ -185,16 +185,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="aQw-52-btX" customClass="CRYLoading">
-                                <rect key="frame" x="144" y="242" width="32" height="11"/>
+                                <rect key="frame" x="140" y="233" width="32" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yev-hb-5LE">
-                                <rect key="frame" x="113" y="83" width="95" height="113"/>
+                                <rect key="frame" x="113" y="84" width="95" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S U C H E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y4M-9S-tEf" customClass="CRYLabel">
-                                <rect key="frame" x="121" y="210" width="78" height="21"/>
+                                <rect key="frame" x="130" y="204" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.2901960784" green="0.52156862749999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -390,24 +390,35 @@ FINDER</string>
             </objects>
             <point key="canvasLocation" x="467" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Sortiment Screen Controller-->
         <scene sceneID="UUl-yr-iTc">
             <objects>
-                <viewController id="cf6-TF-kC9" sceneMemberID="viewController">
+                <viewController id="cf6-TF-kC9" customClass="CRYSortimentScreenController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5uU-5N-mLd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sortiment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V4I-aP-eyY">
-                                <rect key="frame" x="105" y="151" width="73" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="B1o-fu-JSe">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterMainNavi.png" id="grB-UB-3e4">
+                                <rect key="frame" x="0.0" y="460" width="320" height="108"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zfP-Qs-JXC"/>
+                    <navigationItem key="navigationItem" id="zfP-Qs-JXC">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="pvi-k0-IrY">
+                            <rect key="frame" x="47" y="7" width="227" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0J-Wx-TEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
