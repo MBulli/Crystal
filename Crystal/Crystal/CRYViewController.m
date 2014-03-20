@@ -7,6 +7,7 @@
 //
 
 #import "CRYViewController.h"
+#import "CRYBeaconObject.h"
 
 @interface CRYViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+//	CRYBeaconObject *beacon = [CRYBeaconObject beacon:@"uuid-beacon-id"];
+//	NSLog(@"%@", [beacon articles]);
 }
 
 - (void)didReceiveMemoryWarning

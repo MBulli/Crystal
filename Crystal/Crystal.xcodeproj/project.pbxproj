@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
+		54A694C218DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
+		54A694C418DA4DD700841333 /* server_return_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 54A694C318DA4DD700841333 /* server_return_sample.json */; };
+		54A694C718DA50E800841333 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C618DA50E800841333 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE55CDCF18DA35160015E03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CDCE18DA35160015E03B /* Foundation.framework */; };
 		AE55CDD118DA35160015E03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CDD018DA35160015E03B /* CoreGraphics.framework */; };
 		AE55CDD318DA35160015E03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CDD218DA35160015E03B /* UIKit.framework */; };
@@ -41,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54A694BF18DA424C00841333 /* CRYBeaconObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconObject.h; sourceTree = "<group>"; };
+		54A694C018DA424C00841333 /* CRYBeaconObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconObject.m; sourceTree = "<group>"; };
+		54A694C318DA4DD700841333 /* server_return_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = server_return_sample.json; sourceTree = "<group>"; };
+		54A694C518DA50E800841333 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		54A694C618DA50E800841333 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		AE55CDCB18DA35160015E03B /* Crystal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crystal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE55CDCE18DA35160015E03B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE55CDD018DA35160015E03B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54A694C818DA50F700841333 /* 3rd Party Libs */ = {
+			isa = PBXGroup;
+			children = (
+				54A694C518DA50E800841333 /* JSONKit.h */,
+				54A694C618DA50E800841333 /* JSONKit.m */,
+			);
+			name = "3rd Party Libs";
+			sourceTree = "<group>";
+		};
 		AE55CDC218DA35160015E03B = {
 			isa = PBXGroup;
 			children = (
@@ -134,10 +152,13 @@
 		AE55CDD418DA35160015E03B /* Crystal */ = {
 			isa = PBXGroup;
 			children = (
+				54A694C818DA50F700841333 /* 3rd Party Libs */,
 				AE55CE0718DA35590015E03B /* AppDelegate */,
 				AE55CE0818DA35680015E03B /* Controller */,
 				AE55CDE618DA35160015E03B /* CRYViewController.h */,
 				AE55CDE718DA35160015E03B /* CRYViewController.m */,
+				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
+				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
 				AE55CE0918DA35740015E03B /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
@@ -316,6 +337,7 @@
 				F9F6A21118DA643700354397 /* logo_placeholder.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
+				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
 				AE55CDD918DA35160015E03B /* InfoPlist.strings in Resources */,
 			);
@@ -341,6 +363,7 @@
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
+				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDFD18DA35160015E03B /* CrystalTests.m in Sources */,
+				54A694C218DA424C00841333 /* CRYBeaconObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
