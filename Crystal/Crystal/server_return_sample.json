@@ -1,12 +1,12 @@
-[
-{
+[{
     "name":"Mars",
     "price":"free",
     "currency":"",
     "description":"Mars",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Süßwaren"]
 },
 {
     "name":"Snickers",
@@ -15,7 +15,8 @@
     "description":"Snickers",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Süßwaren"]
 },
 {
     "name":"Gummibären",
@@ -24,7 +25,8 @@
     "description":"Gummibären",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category": ["Süßwaren"]
 },
 {
     "name":"Kaugummi",
@@ -33,7 +35,8 @@
     "description":"Kaugummi",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Süßwaren"]
 },
 {
     "name":"Lasagne",
@@ -42,7 +45,8 @@
     "description":"Lasagne",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Fertiggerichte"]
 },
 {
     "name":"Pizza",
@@ -51,7 +55,8 @@
     "description":"Pizza",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Fertiggerichte"]
 },
 {
     "name":"RedBull",
@@ -60,7 +65,8 @@
     "description":"Energy Drink",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Getränke"]
 },
 {
     "name":"Club Mate",
@@ -69,7 +75,8 @@
     "description":"Tea based Energy Drink",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Getränke"]
 },
 {
     "name":"Coca Cola",
@@ -78,7 +85,8 @@
     "description":"Just Coke",
     "is_ad":true,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Getränke"]
 },
 {
     "name":"Coca Cola Zero",
@@ -87,7 +95,8 @@
     "description":"Just Coke but Zero",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Getränke"]
 },
 {
     "name":"Wasser",
@@ -96,7 +105,8 @@
     "description":"Tastes like nothing",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
+    "in_stock": true,
+    "category":["Getränke"]
 },
 {
     "name":"Kaffee",
@@ -105,6 +115,6 @@
     "description":"Cofffffffeeeeeeeeeee",
     "is_ad":false,
     "location": "I3.20",
-    "in_stock": true
-}
-]
+    "in_stock": true,
+    "category":["Getränke"]
+}]
