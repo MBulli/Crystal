@@ -126,6 +126,7 @@
 		F9DE76DA18DAD37F00630DAF /* detail1.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76D818DAD37F00630DAF /* detail1.png */; };
 		F9DE76DB18DAD37F00630DAF /* detail2.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76D918DAD37F00630DAF /* detail2.png */; };
 		F9DE76DD18DAD5B200630DAF /* pfeil.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76DC18DAD5B200630DAF /* pfeil.png */; };
+		F9DE76DF18DAEC8B00630DAF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DE76DE18DAEC8B00630DAF /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +287,7 @@
 		F9DE76D818DAD37F00630DAF /* detail1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail1.png; sourceTree = "<group>"; };
 		F9DE76D918DAD37F00630DAF /* detail2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail2.png; sourceTree = "<group>"; };
 		F9DE76DC18DAD5B200630DAF /* pfeil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pfeil.png; sourceTree = "<group>"; };
+		F9DE76DE18DAEC8B00630DAF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DE76DF18DAEC8B00630DAF /* QuartzCore.framework in Frameworks */,
 				AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */,
 				AE55CE0D18DA3A7F0015E03B /* CoreBluetooth.framework in Frameworks */,
 				AE55CE0B18DA3A7A0015E03B /* CoreLocation.framework in Frameworks */,
@@ -405,6 +408,7 @@
 		AE55CDCD18DA35160015E03B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE76DE18DAEC8B00630DAF /* QuartzCore.framework */,
 				AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */,
 				AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */,
 				AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */,
