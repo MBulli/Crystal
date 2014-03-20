@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CRYViewController : UIViewController
+#import "ESTBeaconManager.h"
+
+
+@interface CRYViewController : UIViewController<ESTBeaconManagerDelegate>
 
 @end
