@@ -467,7 +467,6 @@ FINDER</string>
                                 </state>
                                 <connections>
                                     <action selector="tappedAngebotButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="LQw-J9-J97"/>
-                                    <segue destination="RMA-M7-Nx1" kind="push" id="BOB-jx-yMR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SDC-Ej-sZz" customClass="CRYButton">
@@ -480,7 +479,6 @@ FINDER</string>
                                 </state>
                                 <connections>
                                     <action selector="tappedAngebotButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="PLu-vJ-dc7"/>
-                                    <segue destination="RMA-M7-Nx1" kind="push" id="Z9P-bP-x0C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0V-2n-XIW">
@@ -545,6 +543,7 @@ FINDER</string>
                     <connections>
                         <outlet property="angebotButton" destination="yAa-0b-m1g" id="60G-gc-co4"/>
                         <outlet property="sortimentButton" destination="h0V-2n-XIW" id="kRg-OG-1F7"/>
+                        <segue destination="RMA-M7-Nx1" kind="push" id="8Ty-JH-d7R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJu-oD-g0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -910,10 +909,9 @@ Material</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XqP-pQ-PzL"/>
-        <segue reference="gnc-zo-cld"/>
-        <segue reference="Z9P-bP-x0C"/>
         <segue reference="irw-12-7Yi"/>
         <segue reference="E8I-pc-fGq"/>
+        <segue reference="gnc-zo-cld"/>
+        <segue reference="XqP-pQ-PzL"/>
     </inferredMetricsTieBreakers>
 </document>
