@@ -27,6 +27,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    locationManager=[[CLLocationManager alloc] init];
+	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	locationManager.headingFilter = 1;
+	locationManager.delegate=self;
+	[locationManager startUpdatingHeading];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,6 +40,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading{
+	self.imim.transform = CGAffineTransformMakeRotation(newHeading.magneticHeading * (-M_PI/180.0f));
+}
 /*
 #pragma mark - Navigation
 
