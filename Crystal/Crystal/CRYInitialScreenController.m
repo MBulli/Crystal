@@ -46,4 +46,9 @@
 }
 */
 
+- (IBAction)tappedDissmissButton:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    
+}
 @end

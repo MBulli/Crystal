@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial Screen Controller-->
         <scene sceneID="lDd-bt-U6g">
             <objects>
-                <viewController storyboardIdentifier="CRYInitialScreenController" id="vNB-Al-0Qh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CRYInitialScreenController" id="vNB-Al-0Qh" customClass="CRYInitialScreenController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UUc-hq-OxJ"/>
                         <viewControllerLayoutGuide type="bottom" id="SXF-4b-Acq"/>
@@ -15,8 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="poD-9E-o9y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqK-qA-Tm8">
+                                <rect key="frame" x="137" y="365" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedDissmissButton:" destination="vNB-Al-0Qh" eventType="touchUpInside" id="E95-y1-40I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="KqK-qA-Tm8" id="jWc-Qu-nAg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kp9-R1-Ude" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

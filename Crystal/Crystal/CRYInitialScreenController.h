@@ -10,4 +10,10 @@
 
 @interface CRYInitialScreenController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
+
+
+- (IBAction)tappedDissmissButton:(id)sender;
+
+
 @end
