@@ -321,6 +321,9 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE76DC18DAD5B200630DAF /* pfeil.png */,
+				F9DE76D818DAD37F00630DAF /* detail1.png */,
+				F9DE76D918DAD37F00630DAF /* detail2.png */,
 				2831ACA618DAD53B00AD6DD6 /* ArticleSlice5_01.png */,
 				2831ACA718DAD53B00AD6DD6 /* ArticleSlice5_02.png */,
 				2831ACA818DAD53B00AD6DD6 /* ArticleSlice5_03.png */,
@@ -729,6 +732,7 @@
 				F9DE76A118DAC07B00630DAF /* loading_cart_25.png in Resources */,
 				2831ACB418DAD53B00AD6DD6 /* ArticleSlice5_02.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
+				F9DE76DA18DAD37F00630DAF /* detail1.png in Resources */,
 				2831ACB918DAD53B00AD6DD6 /* ArticleSlice5_07.png in Resources */,
 				F9DE76A218DAC07B00630DAF /* loading_cart_26.png in Resources */,
 				F9DE75E618DAA6E900630DAF /* MainViewFooter.png in Resources */,
