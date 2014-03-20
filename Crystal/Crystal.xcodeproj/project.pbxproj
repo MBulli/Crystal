@@ -29,6 +29,11 @@
 		AE55CE0B18DA3A7A0015E03B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */; };
 		AE55CE0D18DA3A7F0015E03B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */; };
 		AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */; };
+		AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */; };
+		AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */; };
+		F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4118DA7D4100A1E17D /* logo_placeholder.png */; };
+		F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */; };
+		F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,19 @@
 		AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE55CE1518DA3F330015E03B /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
+		AE55CE1618DA3F330015E03B /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		AE55CE1718DA3F330015E03B /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
+		AE55CE1818DA3F330015E03B /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
+		AE55CE1918DA3F330015E03B /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconManager.h; sourceTree = "<group>"; };
+		AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconManager.m; sourceTree = "<group>"; };
+		F9913F4118DA7D4100A1E17D /* logo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_placeholder.png; sourceTree = "<group>"; };
+		F9913F4618DA7DA100A1E17D /* CRYInitialScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInitialScreenController.h; sourceTree = "<group>"; };
+		F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInitialScreenController.m; sourceTree = "<group>"; };
+		F9913F4818DA7DA100A1E17D /* CRYStartScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYStartScreenController.h; sourceTree = "<group>"; };
+		F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYStartScreenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 				AE55CDD118DA35160015E03B /* CoreGraphics.framework in Frameworks */,
 				AE55CDD318DA35160015E03B /* UIKit.framework in Frameworks */,
 				AE55CDCF18DA35160015E03B /* Foundation.framework in Frameworks */,
+				AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,11 +172,13 @@
 				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
 				AE55CE0918DA35740015E03B /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
-				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
-				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
 				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
+				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
+				F9913F4018DA7D0600A1E17D /* Resources */,
+				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
+				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 			);
 			path = Crystal;
 			sourceTree = "<group>";
@@ -210,6 +231,10 @@
 		AE55CE0818DA35680015E03B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F9913F4618DA7DA100A1E17D /* CRYInitialScreenController.h */,
+				F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */,
+				F9913F4818DA7DA100A1E17D /* CRYStartScreenController.h */,
+				F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -219,6 +244,45 @@
 			children = (
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		AE55CE1218DA3F330015E03B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AE55CE1318DA3F330015E03B /* EstimoteSDK */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		AE55CE1318DA3F330015E03B /* EstimoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AE55CE1418DA3F330015E03B /* Headers */,
+				AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */,
+			);
+			path = EstimoteSDK;
+			sourceTree = "<group>";
+		};
+		AE55CE1418DA3F330015E03B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AE55CE1518DA3F330015E03B /* ESTBeacon.h */,
+				AE55CE1618DA3F330015E03B /* ESTBeaconDefinitions.h */,
+				AE55CE1718DA3F330015E03B /* ESTBeaconManager.h */,
+				AE55CE1818DA3F330015E03B /* ESTBeaconRegion.h */,
+				AE55CE1918DA3F330015E03B /* ESTBeaconUpdateInfo.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		F9913F4018DA7D0600A1E17D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
+				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
+				F9913F4118DA7D4100A1E17D /* logo_placeholder.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +333,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Crystal Corp.";
 				TargetAttributes = {
+					AE55CDCA18DA35160015E03B = {
+						DevelopmentTeam = MXGKQ725V4;
+					};
 					AE55CDEE18DA35160015E03B = {
 						TestTargetID = AE55CDCA18DA35160015E03B;
 					};
@@ -302,6 +369,7 @@
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
+				F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */,
 				AE55CDD918DA35160015E03B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +392,9 @@
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
+				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
+				F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */,
+				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 			);
@@ -461,11 +532,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crystal/Crystal-Prefix.pch";
 				INFOPLIST_FILE = "Crystal/Crystal-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crystal/Vendor/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58963774-0F49-4692-84BF-1AD6E68DA1AC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -475,11 +552,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crystal/Crystal-Prefix.pch";
 				INFOPLIST_FILE = "Crystal/Crystal-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crystal/Vendor/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58963774-0F49-4692-84BF-1AD6E68DA1AC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
