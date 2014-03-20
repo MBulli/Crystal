@@ -81,8 +81,12 @@
     
     self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:2.2];
 
-    [self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
+    //[self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
 
+
+    
+    
+    
     
     self.timer = [NSTimer timerWithTimeInterval:0.40
                                           target:self
@@ -114,11 +118,18 @@
 {
     if(self.manager.isBeaconInRange)
     {
+        UILocalNotification *notification = [UILocalNotification new];
+        notification.alertBody = @"Enter region notification";
+        
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+        
         [self.timer invalidate];
         self.timer = nil;
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         
         [self performSegueWithIdentifier: @"seg_beacon" sender:self];
+        
+
     }
     else if(self.manager.isBeaconInRange2)
     {
