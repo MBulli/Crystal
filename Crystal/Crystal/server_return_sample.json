@@ -1,16 +1,18 @@
 [
 	{
-		"name":"Artikel 1",
+		"name":"Artikel Traum 1",
 		"price":"750",
 		"currency":"€",
 		"description":"meine tolle Beschreibung",
+		"category":"Imaginary",
 		"is_ad":true
 	},
 	{
-		"name":"Artikel 2",
+		"name":"Artikel Zeug 2",
 		"price":"1230",
 		"currency":"$",
 		"description":"super toll",
+		"category":"Real Stuff",
 		"is_ad":false
 	}
 ]

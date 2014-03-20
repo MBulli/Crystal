@@ -20,7 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 //	CRYBeaconObject *beacon = [CRYBeaconObject beacon:@"uuid-beacon-id"];
-//	NSLog(@"%@", [beacon articles]);
+//	NSLog(@"%@", [beacon advertisedArticles]);
 }
 
 - (void)didReceiveMemoryWarning
