@@ -111,6 +111,14 @@
         
         [self performSegueWithIdentifier: @"seg_beacon" sender:self];
     }
+    else if(self.manager.isBeaconInRange2)
+    {
+        [self.timer invalidate];
+        self.timer = nil;
+        [NSObject cancelPreviousPerformRequestsWithTarget:self];
+        
+        [self performSegueWithIdentifier: @"dfgh" sender:self];
+    }
     else
     {
         [self performSelector:@selector(timerTick) withObject:nil afterDelay:0.40]; 
