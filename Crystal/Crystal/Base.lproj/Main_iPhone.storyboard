@@ -205,7 +205,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="aQw-52-btX" customClass="CRYLoading">
-                                <rect key="frame" x="144" y="212" width="32" height="11"/>
+                                <rect key="frame" x="144" y="242" width="32" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -213,6 +213,13 @@
                                 <rect key="frame" x="113" y="83" width="95" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S U C H E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y4M-9S-tEf" customClass="CRYLabel">
+                                <rect key="frame" x="121" y="210" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.2901960784" green="0.52156862749999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -279,6 +286,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VNn-DV-98J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ9-fR-YsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,6 +372,9 @@ FINDER</string>
                                     <color key="titleColor" red="0.2901960784" green="0.52156862749999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kBk-91-IbF" kind="push" id="gnc-zo-cld"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Fk-4u-Ibu">
                                 <rect key="frame" x="106" y="386" width="20" height="23"/>
@@ -381,6 +392,9 @@ FINDER</string>
                                 <state key="normal" image="Icon2MainNavi.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kBk-91-IbF" kind="push" id="Vez-Nd-Rhv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -434,6 +448,7 @@ FINDER</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="gnc-zo-cld"/>
         <segue reference="Atr-18-z2m"/>
     </inferredMetricsTieBreakers>
 </document>

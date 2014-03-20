@@ -60,7 +60,7 @@
     //self.manager.isBeaconInRange
     
     
-     self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:1.5];
+     self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:2.2];
     
 
 }
