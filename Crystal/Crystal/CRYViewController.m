@@ -7,6 +7,7 @@
 //
 
 #import "CRYViewController.h"
+#import "CRYBeaconObject.h"
 
 
 @interface CRYViewController ()

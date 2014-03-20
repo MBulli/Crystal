@@ -1,0 +1,16 @@
+[
+	{
+		"name":"Artikel 1",
+		"price":"750",
+		"currency":"€",
+		"description":"meine tolle Beschreibung",
+		"is_ad":true
+	},
+	{
+		"name":"Artikel 2",
+		"price":"1230",
+		"currency":"$",
+		"description":"super toll",
+		"is_ad":false
+	}
+]
