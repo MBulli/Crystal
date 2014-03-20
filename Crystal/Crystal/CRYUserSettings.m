@@ -7,6 +7,7 @@
 //
 
 #import "CRYUserSettings.h"
+#import "JSONKit.h"
 
 @interface CRYUserSettings()
 
@@ -22,7 +23,15 @@
 
 +(NSArray*)loadCategories {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	return [defaults arrayForKey:@"categories"];
+	if ([defaults arrayForKey:@"categories"])
+		return [defaults arrayForKey:@"categories"];
+	return @[];
+}
+
++(NSDictionary*)fehlAmPlatzAberIrgendwoMuessenDieKategorienHin {
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"categories" ofType:@"json"];
+	NSString *content = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+	return [content objectFromJSONString];
 }
 
 

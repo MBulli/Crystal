@@ -21,6 +21,7 @@
 @implementation CRYStartScreenController
 
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,7 +49,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"initScreenShown"]) {
-        
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"initScreenShown"];
         
         CRYInitialScreenController *initSetup = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"CRYInitialScreenController"];
