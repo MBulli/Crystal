@@ -66,7 +66,7 @@
 		NSDictionary *obj =self.beacon.filteredArticles[indexPath.row];
         cell.textLabel.text = [obj valueForKey:@"name"];
 		cell.detailTextLabel.text = [obj valueForKey:@"description"];
-		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"ArticleSlice5_%02d", (arc4random() % 9)+2]];
+		cell.imageView.image = [UIImage imageNamed:[obj valueForKey:@"image"]];
 		cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
         cell.textLabel.textColor = [UIColor blueFontColor];
         cell.backgroundView = nil;

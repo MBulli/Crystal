@@ -1,5 +1,6 @@
 [{
     "name":"Duschvorhang",
+	"image":"ArticleSlice5_01",
     "price":"65",
     "currency":"€",
     "description":"Duschvorhang",
@@ -11,7 +12,8 @@
     "minor":60568
 },
 {
-    "name":"Artischocken",
+ "name":"Artischocken",
+ "image":"ArticleSlice5_02",
     "price":"2",
     "currency":"€ / 100g",
     "description":"Artischocken im Angebot",
@@ -23,7 +25,8 @@
  "minor":60568
 },
 {
-    "name":"Hängebett",
+ "name":"Hängebett",
+ "image":"ArticleSlice5_03",
     "price":"499",
     "currency":"€",
     "description":"Hängebett aus bestem Holz",
@@ -35,7 +38,8 @@
  "minor":60568
 },
 {
-    "name":"Blumenvase",
+ "name":"Blumenvase",
+ "image":"ArticleSlice5_04",
     "price":"5.99",
     "currency":"",
     "description":"Eine dekorative Blumenvase aus Glas",
@@ -47,7 +51,8 @@
  "minor":60568
 },
 {
-    "name":"Lasagne",
+ "name":"Lasagne",
+ "image":"ArticleSlice5_05",
     "price":"1.99",
     "currency":"€",
     "description":"Lasagne",
@@ -59,7 +64,8 @@
  "minor":60568
 },
 {
-    "name":"Regal",
+ "name":"Regal",
+ "image":"ArticleSlice5_07",
     "price":"299",
     "currency":"€",
     "description":"Regal",
@@ -71,7 +77,8 @@
  "minor":60568
 },
 {
-    "name":"Stuhl",
+ "name":"Stuhl",
+ "image":"ArticleSlice5_08",
     "price":"199",
     "currency":"€",
     "description":"Stuhl",
@@ -83,7 +90,8 @@
  "minor":60568
 },
 {
-    "name":"Rucksack",
+ "name":"Rucksack",
+ "image":"ArticleSlice5_10",
     "price":"79",
     "currency":"€",
     "description":"Rucksack",
@@ -95,7 +103,8 @@
  "minor":60568
 },
 {
-    "name":"Coca Cola",
+ "name":"Coca Cola",
+ "image":"ArticleSlice5_06",
     "price":"2",
     "currency":"€",
     "description":"Just Coke",
@@ -107,7 +116,8 @@
  "minor":60568
 },
 {
-    "name":"Apfel",
+ "name":"Apfel",
+ "image":"ArticleSlice5_12",
     "price":"1.50",
     "currency":"€",
     "description":"Apfel",
@@ -124,6 +134,7 @@
  
  {
  "name":"Duschvorhang",
+ "image":"ArticleSlice5_01",
  "price":"65",
  "currency":"€",
  "description":"Duschvorhang",
@@ -136,6 +147,7 @@
  },
  {
  "name":"Artischocken",
+ "image":"ArticleSlice5_02",
  "price":"2",
  "currency":"€ / 100g",
  "description":"Artischocken im Angebot",
@@ -148,6 +160,7 @@
  },
  {
  "name":"Hängebett",
+ "image":"ArticleSlice5_03",
  "price":"499",
  "currency":"€",
  "description":"Hängebett aus bestem Holz",
@@ -160,6 +173,7 @@
  },
  {
  "name":"Blumenvase",
+ "image":"ArticleSlice5_04",
  "price":"5.99",
  "currency":"",
  "description":"Eine dekorative Blumenvase aus Glas",
@@ -172,6 +186,7 @@
  },
  {
  "name":"Lasagne",
+ "image":"ArticleSlice5_05",
  "price":"1.99",
  "currency":"€",
  "description":"Lasagne",
@@ -184,6 +199,7 @@
  },
  {
  "name":"Regal",
+ "image":"ArticleSlice5_07",
  "price":"299",
  "currency":"€",
  "description":"Regal",
@@ -196,6 +212,7 @@
  },
  {
  "name":"Stuhl",
+ "image":"ArticleSlice5_08",
  "price":"199",
  "currency":"€",
  "description":"Stuhl",
@@ -208,6 +225,7 @@
  },
  {
  "name":"Rucksack",
+ "image":"ArticleSlice5_10",
  "price":"79",
  "currency":"€",
  "description":"Rucksack",
@@ -220,6 +238,7 @@
  },
  {
  "name":"Coca Cola",
+ "image":"ArticleSlice5_06",
  "price":"2",
  "currency":"€",
  "description":"Just Coke",
@@ -232,6 +251,7 @@
  },
  {
  "name":"Apfel",
+ "image":"ArticleSlice5_12",
  "price":"1.50",
  "currency":"€",
  "description":"Apfel",
