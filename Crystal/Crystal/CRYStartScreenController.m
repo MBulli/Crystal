@@ -9,10 +9,10 @@
 #import "CRYStartScreenController.h"
 
 #import "CRYInitialScreenController.h"
-
+#import "CRYBeaconManager.h"
 @interface CRYStartScreenController ()
 
-
+@property(nonatomic, strong) CRYBeaconManager* manager;
 @end
 
 @implementation CRYStartScreenController
@@ -46,6 +46,7 @@
         [initSetup setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
         [self presentViewController:initSetup animated:YES completion:nil];
     }
+    self.manager = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441] minorNumber:@[@60568] identifier:@[@"test"]];
 
 }
 
