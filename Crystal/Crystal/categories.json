@@ -2,7 +2,7 @@
     "Literatur":["Romane"],
 	"Entertainment":["Musik","Filme","Videospiele"],
 	"Filme":["Action","Adventure","Rollenspiele"],
-	"Lebensmittel":["Süßwaren","Fertiggerichte","Getränke"],
+	"Lebensmittel":["Süßwaren","Fertiggerichte","Getränke", "Gemüse"],
     "Einrichtungsgegenstände":["Möbel","Antik","Neumodisch","Holz"]
     
  }
