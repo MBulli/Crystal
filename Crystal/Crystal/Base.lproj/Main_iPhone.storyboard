@@ -205,16 +205,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="aQw-52-btX" customClass="CRYLoading">
-                                <rect key="frame" x="144" y="242" width="32" height="11"/>
+                                <rect key="frame" x="140" y="233" width="32" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yev-hb-5LE">
-                                <rect key="frame" x="113" y="83" width="95" height="113"/>
+                                <rect key="frame" x="113" y="84" width="95" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S U C H E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y4M-9S-tEf" customClass="CRYLabel">
-                                <rect key="frame" x="121" y="210" width="78" height="21"/>
+                                <rect key="frame" x="130" y="204" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.2901960784" green="0.52156862749999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -409,10 +409,10 @@ FINDER</string>
             </objects>
             <point key="canvasLocation" x="388" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--Sortiment Screen Controller-->
         <scene sceneID="UUl-yr-iTc">
             <objects>
-                <viewController id="cf6-TF-kC9" sceneMemberID="viewController">
+                <viewController id="cf6-TF-kC9" customClass="CRYSortimentScreenController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5uU-5N-mLd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -109,6 +109,7 @@
 		F9DE76C818DAC07B00630DAF /* loading_cart_5.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE769618DAC07B00630DAF /* loading_cart_5.png */; };
 		F9DE76CB18DAC41E00630DAF /* Icon1MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76C918DAC41E00630DAF /* Icon1MainNavi.png */; };
 		F9DE76CC18DAC41E00630DAF /* Icon2MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE76CA18DAC41E00630DAF /* Icon2MainNavi.png */; };
+		F9DE76CF18DAC85D00630DAF /* CRYSortimentScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +248,8 @@
 		F9DE769618DAC07B00630DAF /* loading_cart_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_cart_5.png; sourceTree = "<group>"; };
 		F9DE76C918DAC41E00630DAF /* Icon1MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon1MainNavi.png; sourceTree = "<group>"; };
 		F9DE76CA18DAC41E00630DAF /* Icon2MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2MainNavi.png; sourceTree = "<group>"; };
+		F9DE76CD18DAC85D00630DAF /* CRYSortimentScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYSortimentScreenController.h; sourceTree = "<group>"; };
+		F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYSortimentScreenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +446,8 @@
 				2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */,
 				F9DE75F518DAB39600630DAF /* CRYMainScreenController.h */,
 				F9DE75F618DAB39600630DAF /* CRYMainScreenController.m */,
+				F9DE76CD18DAC85D00630DAF /* CRYSortimentScreenController.h */,
+				F9DE76CE18DAC85D00630DAF /* CRYSortimentScreenController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -747,6 +752,7 @@
 				F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */,
 				2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */,
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
+				F9DE76CF18DAC85D00630DAF /* CRYSortimentScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				F9DE75EC18DAA80800630DAF /* CRYButton.m in Sources */,
 				543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */,
