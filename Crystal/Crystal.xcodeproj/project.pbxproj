@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2834F90018DA9D5B00C4F507 /* CRYLoading.m */; };
 		2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */; };
 		2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848784518DA89870083F812 /* UIColor+CRYExt.m */; };
 		2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784B18DA8CA20083F812 /* FooterArrow.png */; };
@@ -47,6 +48,12 @@
 		F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */; };
 		F9DE75E218DA9C2A00630DAF /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75E018DA9C2A00630DAF /* Utilities.m */; };
 		F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */; };
+		F9DE75E618DAA6E900630DAF /* MainViewFooter.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75E518DAA6E900630DAF /* MainViewFooter.png */; };
+		F9DE75EC18DAA80800630DAF /* CRYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75EB18DAA80800630DAF /* CRYButton.m */; };
+		F9DE75EE18DAABEB00630DAF /* FooterMainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75ED18DAABEB00630DAF /* FooterMainNavi.png */; };
+		F9DE75F018DAAC9100630DAF /* PicMainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75EF18DAAC9100630DAF /* PicMainNavi.png */; };
+		F9DE75F318DAAE9E00630DAF /* Pic1MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75F118DAAE9E00630DAF /* Pic1MainNavi.png */; };
+		F9DE75F418DAAE9E00630DAF /* Pic2MainNavi.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75F218DAAE9E00630DAF /* Pic2MainNavi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2834F8FF18DA9D5B00C4F507 /* CRYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYLoading.h; sourceTree = "<group>"; };
+		2834F90018DA9D5B00C4F507 /* CRYLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYLoading.m; sourceTree = "<group>"; };
 		2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYQuestionDetailViewController.h; sourceTree = "<group>"; };
 		2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYQuestionDetailViewController.m; sourceTree = "<group>"; };
 		2848784418DA89870083F812 /* UIColor+CRYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRYExt.h"; sourceTree = "<group>"; };
@@ -120,6 +129,13 @@
 		F9DE75DF18DA9C2A00630DAF /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		F9DE75E018DA9C2A00630DAF /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainViewFooterLogo.png; sourceTree = "<group>"; };
+		F9DE75E518DAA6E900630DAF /* MainViewFooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainViewFooter.png; sourceTree = "<group>"; };
+		F9DE75EA18DAA80800630DAF /* CRYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYButton.h; sourceTree = "<group>"; };
+		F9DE75EB18DAA80800630DAF /* CRYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYButton.m; sourceTree = "<group>"; };
+		F9DE75ED18DAABEB00630DAF /* FooterMainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FooterMainNavi.png; sourceTree = "<group>"; };
+		F9DE75EF18DAAC9100630DAF /* PicMainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicMainNavi.png; sourceTree = "<group>"; };
+		F9DE75F118DAAE9E00630DAF /* Pic1MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pic1MainNavi.png; sourceTree = "<group>"; };
+		F9DE75F218DAAE9E00630DAF /* Pic2MainNavi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pic2MainNavi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +169,11 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE75F118DAAE9E00630DAF /* Pic1MainNavi.png */,
+				F9DE75F218DAAE9E00630DAF /* Pic2MainNavi.png */,
+				F9DE75EF18DAAC9100630DAF /* PicMainNavi.png */,
+				F9DE75ED18DAABEB00630DAF /* FooterMainNavi.png */,
+				F9DE75E518DAA6E900630DAF /* MainViewFooter.png */,
 				F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */,
 				2848784B18DA8CA20083F812 /* FooterArrow.png */,
 				2848784C18DA8CA20083F812 /* HeaderClear.png */,
@@ -230,6 +251,11 @@
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
 				F9913F4018DA7D0600A1E17D /* Resources */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
+				AE55CE1218DA3F330015E03B /* Vendor */,
+				AE55CE0618DA35540015E03B /* View */,
+				F9913F4018DA7D0600A1E17D /* Resources */,
+				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
+				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 				2848784418DA89870083F812 /* UIColor+CRYExt.h */,
 				2848784518DA89870083F812 /* UIColor+CRYExt.m */,
 				F9DE75DD18DA9C2A00630DAF /* UIFont+CRYExtension.h */,
@@ -275,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				F9913F5C18DA873E00A1E17D /* UI ELements */,
+				2834F8FF18DA9D5B00C4F507 /* CRYLoading.h */,
+				2834F90018DA9D5B00C4F507 /* CRYLoading.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -356,6 +384,8 @@
 			children = (
 				F9913F5D18DA875F00A1E17D /* CRYLabel.h */,
 				F9913F5E18DA875F00A1E17D /* CRYLabel.m */,
+				F9DE75EA18DAA80800630DAF /* CRYButton.h */,
+				F9DE75EB18DAA80800630DAF /* CRYButton.m */,
 			);
 			name = "UI ELements";
 			sourceTree = "<group>";
@@ -441,18 +471,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CE2018DAA2A60015E03B /* categories.json in Resources */,
+				F9DE75F018DAAC9100630DAF /* PicMainNavi.png in Resources */,
 				F9DE75DA18DA8F1900630DAF /* ProximaNovaCondRegular.ttf in Resources */,
 				F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */,
 				F9DE75DB18DA8F1900630DAF /* ProximaNovaCondLight.ttf in Resources */,
 				F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */,
+				F9DE75F418DAAE9E00630DAF /* Pic2MainNavi.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
+				F9DE75E618DAA6E900630DAF /* MainViewFooter.png in Resources */,
 				2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */,
 				2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */,
+				F9DE75EE18DAABEB00630DAF /* FooterMainNavi.png in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
 				F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */,
 				AE55CDD918DA35160015E03B /* InfoPlist.strings in Resources */,
+				F9DE75F318DAAE9E00630DAF /* Pic1MainNavi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +518,10 @@
 				2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */,
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
+				F9DE75EC18DAA80800630DAF /* CRYButton.m in Sources */,
 				543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
+				2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
