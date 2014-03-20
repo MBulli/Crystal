@@ -69,6 +69,7 @@
         [self presentViewController:initSetup animated:YES completion:nil];
     }
     
+    self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:2.2];
 
     [self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
 

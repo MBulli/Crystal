@@ -1,20 +1,18 @@
 //
-//  CRYMainScreenController.m
+//  CRYInit01ViewController.m
 //  Crystal
 //
-//  Created by Steffen on 20.03.14.
+//  Created by xcode on 20.03.14.
 //  Copyright (c) 2014 Crystal Corp. All rights reserved.
 //
 
-#import "CRYMainScreenController.h"
-#import "CRYInitialScreenController.h"
+#import "CRYInit01ViewController.h"
 
-
-@interface CRYMainScreenController ()
+@interface CRYInit01ViewController ()
 
 @end
 
-@implementation CRYMainScreenController
+@implementation CRYInit01ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,23 +23,31 @@
     return self;
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleDefault;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self performSelector:@selector(switchScreen) withObject:nil afterDelay:5];
+}
+
+-(void)switchScreen
+{
+    [self performSegueWithIdentifier:@"segStep01" sender:self];
 }
 
 /*
@@ -54,23 +60,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)tappedAngebotButton:(id)sender {
-}
-
-- (IBAction)tappedSortimentButton:(id)sender {
-}
-
-- (IBAction)tappedInterestButton:(id)sender {
-    
-    
-    CRYInitialScreenController *initSetup = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"CRYInitialScreenController2"];
-    [initSetup setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentViewController:initSetup animated:YES completion:nil];
-    
-}
-
-
-
 
 @end
