@@ -56,6 +56,10 @@
         [self presentViewController:initSetup animated:YES completion:nil];
     }
     self.manager = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441] minorNumber:@[@60568] identifier:@[@"test"]];
+    
+    // bitte nicht nochmal löschen^^
+    self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:2.2];
+    
 
 
     [self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
