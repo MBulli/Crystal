@@ -12,6 +12,7 @@
 		2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848784518DA89870083F812 /* UIColor+CRYExt.m */; };
 		2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784B18DA8CA20083F812 /* FooterArrow.png */; };
 		2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784C18DA8CA20083F812 /* HeaderClear.png */; };
+		543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 543D9B7818DAA02D0061F281 /* CRYUserSettings.m */; };
 		54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C218DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C418DA4DD700841333 /* server_return_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 54A694C318DA4DD700841333 /* server_return_sample.json */; };
@@ -36,6 +37,7 @@
 		AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */; };
 		AE55CE1B18DA3F330015E03B /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */; };
 		AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */; };
+		AE55CE2018DAA2A60015E03B /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AE55CE1F18DAA2A60015E03B /* categories.json */; };
 		F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4118DA7D4100A1E17D /* logo_placeholder.png */; };
 		F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */; };
 		F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */; };
@@ -45,6 +47,7 @@
 		F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4F18DA826B00A1E17D /* ProximaNovaCondSemibold.ttf */; };
 		F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */; };
 		F9DE75E218DA9C2A00630DAF /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75E018DA9C2A00630DAF /* Utilities.m */; };
+		F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,8 @@
 		2848784518DA89870083F812 /* UIColor+CRYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRYExt.m"; sourceTree = "<group>"; };
 		2848784B18DA8CA20083F812 /* FooterArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FooterArrow.png; sourceTree = "<group>"; };
 		2848784C18DA8CA20083F812 /* HeaderClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeaderClear.png; sourceTree = "<group>"; };
+		543D9B7718DAA02D0061F281 /* CRYUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYUserSettings.h; sourceTree = "<group>"; };
+		543D9B7818DAA02D0061F281 /* CRYUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYUserSettings.m; sourceTree = "<group>"; };
 		54A694BF18DA424C00841333 /* CRYBeaconObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconObject.h; sourceTree = "<group>"; };
 		54A694C018DA424C00841333 /* CRYBeaconObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconObject.m; sourceTree = "<group>"; };
 		54A694C318DA4DD700841333 /* server_return_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = server_return_sample.json; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		AE55CE1A18DA3F330015E03B /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
 		AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconManager.h; sourceTree = "<group>"; };
 		AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconManager.m; sourceTree = "<group>"; };
+		AE55CE1F18DAA2A60015E03B /* categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		F9913F4118DA7D4100A1E17D /* logo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_placeholder.png; sourceTree = "<group>"; };
 		F9913F4618DA7DA100A1E17D /* CRYInitialScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInitialScreenController.h; sourceTree = "<group>"; };
 		F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInitialScreenController.m; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CRYExtension.m"; sourceTree = "<group>"; };
 		F9DE75DF18DA9C2A00630DAF /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		F9DE75E018DA9C2A00630DAF /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainViewFooterLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +156,24 @@
 		2848783F18DA88390083F812 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE75E318DA9DA600630DAF /* MainViewFooterLogo.png */,
 				2848784B18DA8CA20083F812 /* FooterArrow.png */,
 				2848784C18DA8CA20083F812 /* HeaderClear.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		543D9B7A18DAA0A70061F281 /* Meth */ = {
+			isa = PBXGroup;
+			children = (
+				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
+				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
+				543D9B7718DAA02D0061F281 /* CRYUserSettings.h */,
+				543D9B7818DAA02D0061F281 /* CRYUserSettings.m */,
+				54A694C318DA4DD700841333 /* server_return_sample.json */,
+				AE55CE1F18DAA2A60015E03B /* categories.json */,
+			);
+			name = Meth;
 			sourceTree = "<group>";
 		};
 		54A694C818DA50F700841333 /* 3rd Party Libs */ = {
@@ -203,16 +224,14 @@
 				54A694C818DA50F700841333 /* 3rd Party Libs */,
 				AE55CE0718DA35590015E03B /* AppDelegate */,
 				AE55CE0818DA35680015E03B /* Controller */,
+				543D9B7A18DAA0A70061F281 /* Meth */,
 				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
 				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
-				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
-				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
 				AE55CDE618DA35160015E03B /* CRYViewController.h */,
 				AE55CDE718DA35160015E03B /* CRYViewController.m */,
 				2848783F18DA88390083F812 /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
 				F9913F4018DA7D0600A1E17D /* Resources */,
-				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
 				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
@@ -431,7 +450,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE55CE2018DAA2A60015E03B /* categories.json in Resources */,
 				F9DE75DA18DA8F1900630DAF /* ProximaNovaCondRegular.ttf in Resources */,
+				F9DE75E418DA9DA600630DAF /* MainViewFooterLogo.png in Resources */,
 				F9DE75DB18DA8F1900630DAF /* ProximaNovaCondLight.ttf in Resources */,
 				F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
@@ -472,6 +493,7 @@
 				2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */,
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
+				543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 				2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */,
 			);
