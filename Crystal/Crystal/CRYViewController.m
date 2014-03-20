@@ -8,10 +8,12 @@
 
 #import "CRYViewController.h"
 #import "CRYBeaconObject.h"
+#import "CRYBeaconManager.h"
 
 
 @interface CRYViewController ()
 
+@property(nonatomic, strong) CRYBeaconManager* manager;
 @end
 
 @implementation CRYViewController
@@ -19,6 +21,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+//	CRYBeaconObject *beacon = [CRYBeaconObject beacon:@"uuid-beacon-id"];
+//	NSLog(@"%@", [beacon advertisedArticles]);
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    self.manager = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441] minorNumber:@[@60568] identifier:@[@"test"]];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +37,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 @end

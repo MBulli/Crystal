@@ -10,6 +10,10 @@
 
 
 @interface CRYBeaconObject : NSObject
+@property (nonatomic, strong) NSArray *filteredArticles;
+
 +(instancetype)beacon:(NSString*)beacon_id;
 -(NSArray*)articles;
+-(NSArray*)advertisedArticles;
+-(void)filterArray:(NSString*)searchString;
 @end
