@@ -25,6 +25,9 @@
 		AE55CE0B18DA3A7A0015E03B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */; };
 		AE55CE0D18DA3A7F0015E03B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */; };
 		AE55CE0F18DA3D990015E03B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */; };
+		F9F6A20E18DA554F00354397 /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */; };
+		F9F6A21118DA643700354397 /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F6A21018DA643700354397 /* logo_placeholder.png */; };
+		F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,11 @@
 		AE55CE0A18DA3A7A0015E03B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AE55CE0C18DA3A7F0015E03B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		AE55CE0E18DA3D990015E03B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F9F6A20B18DA554F00354397 /* CRYStartScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYStartScreenController.h; sourceTree = "<group>"; };
+		F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYStartScreenController.m; sourceTree = "<group>"; };
+		F9F6A21018DA643700354397 /* logo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_placeholder.png; sourceTree = "<group>"; };
+		F9F6A21218DA64BC00354397 /* CRYInitialScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYInitialScreenController.h; sourceTree = "<group>"; };
+		F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYInitialScreenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +140,9 @@
 				AE55CDE718DA35160015E03B /* CRYViewController.m */,
 				AE55CE0918DA35740015E03B /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
-				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
-				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
 				AE55CE0618DA35540015E03B /* View */,
+				F9F6A1FF18DA412300354397 /* Resources */,
 			);
 			path = Crystal;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 		AE55CE0618DA35540015E03B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F9F6A20018DA419100354397 /* Startscreen */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -188,6 +196,10 @@
 		AE55CE0818DA35680015E03B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F9F6A20B18DA554F00354397 /* CRYStartScreenController.h */,
+				F9F6A20C18DA554F00354397 /* CRYStartScreenController.m */,
+				F9F6A21218DA64BC00354397 /* CRYInitialScreenController.h */,
+				F9F6A21318DA64BC00354397 /* CRYInitialScreenController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -197,6 +209,31 @@
 			children = (
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		F9F6A1FE18DA40F700354397 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AE55CDE318DA35160015E03B /* Main_iPad.storyboard */,
+				AE55CDE018DA35160015E03B /* Main_iPhone.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		F9F6A1FF18DA412300354397 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9F6A21018DA643700354397 /* logo_placeholder.png */,
+				F9F6A1FE18DA40F700354397 /* Storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9F6A20018DA419100354397 /* Startscreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Startscreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F6A21118DA643700354397 /* logo_placeholder.png in Resources */,
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
@@ -299,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
+				F9F6A20E18DA554F00354397 /* CRYStartScreenController.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
+				F9F6A21418DA64BC00354397 /* CRYInitialScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
