@@ -38,7 +38,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"initScreenShown"]) {
+    if(YES || ![[NSUserDefaults standardUserDefaults] boolForKey:@"initScreenShown"]) {
         
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"initScreenShown"];
         

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */; };
+		2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848784518DA89870083F812 /* UIColor+CRYExt.m */; };
+		2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784B18DA8CA20083F812 /* FooterArrow.png */; };
+		2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784C18DA8CA20083F812 /* HeaderClear.png */; };
 		54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C218DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C418DA4DD700841333 /* server_return_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 54A694C318DA4DD700841333 /* server_return_sample.json */; };
@@ -47,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYQuestionDetailViewController.h; sourceTree = "<group>"; };
+		2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYQuestionDetailViewController.m; sourceTree = "<group>"; };
+		2848784418DA89870083F812 /* UIColor+CRYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRYExt.h"; sourceTree = "<group>"; };
+		2848784518DA89870083F812 /* UIColor+CRYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRYExt.m"; sourceTree = "<group>"; };
+		2848784B18DA8CA20083F812 /* FooterArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FooterArrow.png; sourceTree = "<group>"; };
+		2848784C18DA8CA20083F812 /* HeaderClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeaderClear.png; sourceTree = "<group>"; };
 		54A694BF18DA424C00841333 /* CRYBeaconObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconObject.h; sourceTree = "<group>"; };
 		54A694C018DA424C00841333 /* CRYBeaconObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconObject.m; sourceTree = "<group>"; };
 		54A694C318DA4DD700841333 /* server_return_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = server_return_sample.json; sourceTree = "<group>"; };
@@ -118,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2848783F18DA88390083F812 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2848784B18DA8CA20083F812 /* FooterArrow.png */,
+				2848784C18DA8CA20083F812 /* HeaderClear.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		54A694C818DA50F700841333 /* 3rd Party Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,19 +185,21 @@
 				54A694C818DA50F700841333 /* 3rd Party Libs */,
 				AE55CE0718DA35590015E03B /* AppDelegate */,
 				AE55CE0818DA35680015E03B /* Controller */,
-				AE55CDE618DA35160015E03B /* CRYViewController.h */,
-				AE55CDE718DA35160015E03B /* CRYViewController.m */,
+				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
+				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
 				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
-				AE55CE0918DA35740015E03B /* Images */,
+				AE55CDE618DA35160015E03B /* CRYViewController.h */,
+				AE55CDE718DA35160015E03B /* CRYViewController.m */,
+				2848783F18DA88390083F812 /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
+				F9913F4018DA7D0600A1E17D /* Resources */,
 				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
 				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
-				F9913F4018DA7D0600A1E17D /* Resources */,
-				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
-				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
+				2848784418DA89870083F812 /* UIColor+CRYExt.h */,
+				2848784518DA89870083F812 /* UIColor+CRYExt.m */,
 			);
 			path = Crystal;
 			sourceTree = "<group>";
@@ -235,15 +256,10 @@
 				F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */,
 				F9913F4818DA7DA100A1E17D /* CRYStartScreenController.h */,
 				F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */,
+				2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */,
+				2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		AE55CE0918DA35740015E03B /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		AE55CE1218DA3F330015E03B /* Vendor */ = {
@@ -366,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDE518DA35160015E03B /* Main_iPad.storyboard in Resources */,
+				2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */,
+				2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */,
 				AE55CDEA18DA35160015E03B /* Images.xcassets in Resources */,
 				54A694C418DA4DD700841333 /* server_return_sample.json in Resources */,
 				AE55CDE218DA35160015E03B /* Main_iPhone.storyboard in Resources */,
@@ -394,6 +412,8 @@
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
 				F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */,
+				2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */,
+				2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */,
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
@@ -542,7 +562,7 @@
 					"$(PROJECT_DIR)/Crystal/Vendor/EstimoteSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "58963774-0F49-4692-84BF-1AD6E68DA1AC";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -562,7 +582,7 @@
 					"$(PROJECT_DIR)/Crystal/Vendor/EstimoteSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "58963774-0F49-4692-84BF-1AD6E68DA1AC";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
