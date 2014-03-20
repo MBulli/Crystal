@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
+@interface CRYDetail1Controller : UIViewController <CLLocationManagerDelegate> {
+	CLLocationManager *locationManager;
+}
+@property (nonatomic,retain) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UIImageView *imim;
 
-@interface CRYDetail1Controller : UIViewController
 
 @end
