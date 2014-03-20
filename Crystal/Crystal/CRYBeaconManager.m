@@ -58,7 +58,6 @@
     if (state == CLRegionStateInside) {
         CRYBeaconObject* beacon = [CRYBeaconObject beacon:region.proximityUUID.UUIDString];  
         NSLog(@"%@",[beacon articles].lastObject);
-        self.isBeaconInRange = true;
     }
     else if(state== CLRegionStateOutside)
     {
@@ -72,6 +71,8 @@
     }
 }
 
+
+
 -(void)beaconManager:(ESTBeaconManager *)manager didFailDiscoveryInRegion:(ESTBeaconRegion *)region
 {
     [self displayRegionAlert:region withTitle:@"did fail discovery in region"];
@@ -83,11 +84,15 @@
 
 -(void)beaconManager:(ESTBeaconManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(ESTBeaconRegion *)region
 {
+    self.isBeaconInRange = NO;
+    
     for (ESTBeacon* beacon  in beacons) {
-    NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
-    [self displayRegionAlert:region withTitle:string];
+        NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
+        [self displayRegionAlert:region withTitle:string];
+        
+        if(beacon.distance.integerValue != -1)
+            self.isBeaconInRange = YES;
     }
-      // [self displayRegionAlert:region withTitle:<#(NSString *)#>]
 }
 
 -(void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
