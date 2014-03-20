@@ -1,120 +1,250 @@
 [{
-    "name":"Mars",
-    "price":"free",
-    "currency":"",
-    "description":"Mars",
+    "name":"Duschvorhang",
+    "price":"65",
+    "currency":"€",
+    "description":"Duschvorhang",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Süßwaren"]
+    "category":["Süßwaren"],
+    "major":56441,
+    "minor":60568
 },
 {
-    "name":"Snickers",
-    "price":"free",
-    "currency":"",
-    "description":"Snickers",
+    "name":"Artischocken",
+    "price":"2",
+    "currency":"€ / 100g",
+    "description":"Artischocken im Angebot",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Süßwaren"]
+ "category":["Süßwaren"],
+ "major":56441,
+ "minor":60568
 },
 {
-    "name":"Gummibären",
-    "price":"free",
-    "currency":"",
-    "description":"Gummibären",
+    "name":"Hängebett",
+    "price":"499",
+    "currency":"€",
+    "description":"Hängebett aus bestem Holz",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category": ["Süßwaren"]
+ "category": ["Süßwaren"],
+ "major":56441,
+ "minor":60568
 },
 {
-    "name":"Kaugummi",
-    "price":"free",
+    "name":"Blumenvase",
+    "price":"5.99",
     "currency":"",
-    "description":"Kaugummi",
+    "description":"Eine dekorative Blumenvase aus Glas",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Süßwaren"]
+ "category":["Süßwaren"],
+ "major":56441,
+ "minor":60568
 },
 {
     "name":"Lasagne",
-    "price":"free",
-    "currency":"",
+    "price":"1.99",
+    "currency":"€",
     "description":"Lasagne",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Fertiggerichte"]
+ "category":["Fertiggerichte"],
+ "major":56441,
+ "minor":60568
 },
 {
-    "name":"Pizza",
-    "price":"free",
-    "currency":"",
-    "description":"Pizza",
+    "name":"Regal",
+    "price":"299",
+    "currency":"€",
+    "description":"Regal",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Fertiggerichte"]
+ "category":["Fertiggerichte"],
+ "major":56441,
+ "minor":60568
 },
 {
-    "name":"RedBull",
-    "price":"free",
-    "currency":"",
-    "description":"Energy Drink",
+    "name":"Stuhl",
+    "price":"199",
+    "currency":"€",
+    "description":"Stuhl",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Getränke"]
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
 },
 {
-    "name":"Club Mate",
-    "price":"free",
-    "currency":"",
-    "description":"Tea based Energy Drink",
+    "name":"Rucksack",
+    "price":"79",
+    "currency":"€",
+    "description":"Rucksack",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Getränke"]
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
 },
 {
     "name":"Coca Cola",
-    "price":"free",
-    "currency":"",
+    "price":"2",
+    "currency":"€",
     "description":"Just Coke",
     "is_ad":true,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Getränke"]
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
 },
 {
-    "name":"Coca Cola Zero",
-    "price":"free",
-    "currency":"",
-    "description":"Just Coke but Zero",
+    "name":"Apfel",
+    "price":"1.50",
+    "currency":"€",
+    "description":"Apfel",
     "is_ad":false,
     "location": "I3.20",
     "in_stock": true,
-    "category":["Getränke"]
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
 },
-{
-    "name":"Wasser",
-    "price":"free",
-    "currency":"",
-    "description":"Tastes like nothing",
-    "is_ad":false,
-    "location": "I3.20",
-    "in_stock": true,
-    "category":["Getränke"]
-},
-{
-    "name":"Kaffee",
-    "price":"free",
-    "currency":"",
-    "description":"Cofffffffeeeeeeeeeee",
-    "is_ad":false,
-    "location": "I3.20",
-    "in_stock": true,
-    "category":["Getränke"]
-}]
+ 
+ 
+ 
+ 
+ {
+ "name":"Duschvorhang",
+ "price":"65",
+ "currency":"€",
+ "description":"Duschvorhang",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Süßwaren"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Artischocken",
+ "price":"2",
+ "currency":"€ / 100g",
+ "description":"Artischocken im Angebot",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Süßwaren"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Hängebett",
+ "price":"499",
+ "currency":"€",
+ "description":"Hängebett aus bestem Holz",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category": ["Süßwaren"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Blumenvase",
+ "price":"5.99",
+ "currency":"",
+ "description":"Eine dekorative Blumenvase aus Glas",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Süßwaren"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Lasagne",
+ "price":"1.99",
+ "currency":"€",
+ "description":"Lasagne",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Fertiggerichte"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Regal",
+ "price":"299",
+ "currency":"€",
+ "description":"Regal",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Fertiggerichte"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Stuhl",
+ "price":"199",
+ "currency":"€",
+ "description":"Stuhl",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Rucksack",
+ "price":"79",
+ "currency":"€",
+ "description":"Rucksack",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Coca Cola",
+ "price":"2",
+ "currency":"€",
+ "description":"Just Coke",
+ "is_ad":true,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
+ },
+ {
+ "name":"Apfel",
+ "price":"1.50",
+ "currency":"€",
+ "description":"Apfel",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category":["Getränke"],
+ "major":56441,
+ "minor":60568
+ }
+ 
+ 
+ 
+ 
+ 
+ ]
