@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54381F3D18DA8F95006DA475 /* CRYUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54381F3C18DA8F95006DA475 /* CRYUserSettings.m */; };
 		54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C218DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C418DA4DD700841333 /* server_return_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 54A694C318DA4DD700841333 /* server_return_sample.json */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54381F3B18DA8F95006DA475 /* CRYUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYUserSettings.h; sourceTree = "<group>"; };
+		54381F3C18DA8F95006DA475 /* CRYUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYUserSettings.m; sourceTree = "<group>"; };
 		54A694BF18DA424C00841333 /* CRYBeaconObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconObject.h; sourceTree = "<group>"; };
 		54A694C018DA424C00841333 /* CRYBeaconObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconObject.m; sourceTree = "<group>"; };
 		54A694C318DA4DD700841333 /* server_return_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = server_return_sample.json; sourceTree = "<group>"; };
@@ -118,6 +121,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54381F3E18DA8FA3006DA475 /* Meth */ = {
+			isa = PBXGroup;
+			children = (
+				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
+				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
+				54381F3B18DA8F95006DA475 /* CRYUserSettings.h */,
+				54381F3C18DA8F95006DA475 /* CRYUserSettings.m */,
+				54A694C318DA4DD700841333 /* server_return_sample.json */,
+			);
+			name = Meth;
+			sourceTree = "<group>";
+		};
 		54A694C818DA50F700841333 /* 3rd Party Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,11 +183,9 @@
 				AE55CE0818DA35680015E03B /* Controller */,
 				AE55CDE618DA35160015E03B /* CRYViewController.h */,
 				AE55CDE718DA35160015E03B /* CRYViewController.m */,
-				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
-				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
+				54381F3E18DA8FA3006DA475 /* Meth */,
 				AE55CE0918DA35740015E03B /* Images */,
 				AE55CDE918DA35160015E03B /* Images.xcassets */,
-				54A694C318DA4DD700841333 /* server_return_sample.json */,
 				AE55CDD518DA35160015E03B /* Supporting Files */,
 				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
@@ -390,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
+				54381F3D18DA8F95006DA475 /* CRYUserSettings.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,

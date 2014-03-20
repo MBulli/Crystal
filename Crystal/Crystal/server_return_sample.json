@@ -5,6 +5,7 @@
 		"currency":"€",
 		"description":"meine tolle Beschreibung",
 		"is_ad":true,
+		"category":["Getränke","Club Mate"],
         "location": "I3.20"
 	},
 	{
@@ -13,6 +14,7 @@
 		"currency":"$",
 		"description":"super toll",
 		"is_ad":false,
+		"category":["nix"],
         "location": "I3.20"
 	}
 ]
