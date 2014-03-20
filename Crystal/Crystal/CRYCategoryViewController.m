@@ -8,7 +8,7 @@
 
 #import "CRYCategoryViewController.h"
 
-
+#import "CRYUserSettings.h"
 
 @interface CRYFlowLayout : UICollectionViewFlowLayout
 
@@ -44,6 +44,14 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    if (![[CRYUserSettings loadCategories] containsObject:@"Gemüse"]) {
+        [self.greenZeug setImage:[UIImage imageNamed:@"ArticleSlice5_06"] forState:UIControlStateNormal];
+        [self.greenZeug setEnabled:NO];
+    } else {
+        [self.greenZeug setImage:[UIImage imageNamed:@"ArticleSlice5_02"] forState:UIControlStateNormal];
+        [self.greenZeug setEnabled:YES];
+    }
+    
     for (UIView *view in self.scrollView.subviews) {
         
         CGFloat dur = (arc4random() % 10) / 10.0;

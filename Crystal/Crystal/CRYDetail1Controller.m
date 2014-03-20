@@ -32,6 +32,7 @@
 	locationManager.headingFilter = 1;
 	locationManager.delegate=self;
 	[locationManager startUpdatingHeading];
+    
 }
 
 - (void)didReceiveMemoryWarning

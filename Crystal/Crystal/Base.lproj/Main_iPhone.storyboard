@@ -246,7 +246,7 @@
                     <connections>
                         <outlet property="animatedImageView" destination="yev-hb-5LE" id="NDh-B9-2f3"/>
                         <segue destination="eTM-eh-4fr" kind="push" identifier="seg_nobeacon" id="z6E-BC-Avh"/>
-                        <segue destination="811-Yf-HGU" kind="push" identifier="seg_beacon" id="u61-xe-sSK"/>
+                        <segue destination="811-Yf-HGU" kind="push" identifier="seg_beacon1" id="u61-xe-sSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQP-Fk-j6Q" sceneMemberID="firstResponder"/>
@@ -327,6 +327,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qGp-hG-pFu" kind="push" id="jEl-at-Vs0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -351,10 +354,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MERKEZTTEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77b-SL-hKr">
-                                <rect key="frame" x="106" y="244" width="109" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainViewFooterLogo.png" id="H8T-zK-ecQ">
+                                <rect key="frame" x="0.0" y="157" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MERKZETTEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oW8-8L-pT6" customClass="CRYLabel">
+                                <rect key="frame" x="0.0" y="290" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.2901960784" green="0.52156862749999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -445,7 +453,7 @@ von Soßen</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g0b-ho-pMP" customClass="CRYButton">
-                                <rect key="frame" x="139" y="257" width="131" height="71"/>
+                                <rect key="frame" x="139" y="250" width="131" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal">
@@ -455,8 +463,7 @@ FINDER</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedSortimentButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="V8y-a8-e0a"/>
-                                    <segue destination="gNL-fF-ald" kind="push" id="Txe-in-qGn"/>
+                                    <action selector="tappedSortimentButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="uhX-YD-umV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yAa-0b-m1g">
@@ -466,11 +473,11 @@ FINDER</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedAngebotButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="LQw-J9-J97"/>
+                                    <action selector="tappedAngebotButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="FuA-uB-gvP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SDC-Ej-sZz" customClass="CRYButton">
-                                <rect key="frame" x="139" y="137" width="131" height="71"/>
+                                <rect key="frame" x="139" y="107" width="131" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="ANGEBOTE">
@@ -478,7 +485,7 @@ FINDER</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedAngebotButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="PLu-vJ-dc7"/>
+                                    <action selector="tappedAngebotButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="lXL-7t-rdD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0V-2n-XIW">
@@ -488,8 +495,7 @@ FINDER</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedSortimentButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="rKJ-Ew-PPN"/>
-                                    <segue destination="gNL-fF-ald" kind="push" id="XqP-pQ-PzL"/>
+                                    <action selector="tappedSortimentButton:" destination="811-Yf-HGU" eventType="touchUpInside" id="BGb-Q7-DuQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OQI-yg-rlG" customClass="CRYButton">
@@ -543,7 +549,9 @@ FINDER</string>
                     <connections>
                         <outlet property="angebotButton" destination="yAa-0b-m1g" id="60G-gc-co4"/>
                         <outlet property="sortimentButton" destination="h0V-2n-XIW" id="kRg-OG-1F7"/>
-                        <segue destination="RMA-M7-Nx1" kind="push" id="8Ty-JH-d7R"/>
+                        <segue destination="RMA-M7-Nx1" kind="push" identifier="seg_beacon1" id="8Ty-JH-d7R"/>
+                        <segue destination="oNY-wh-j8R" kind="push" identifier="seg_beacon2" id="Kog-qf-XZp"/>
+                        <segue destination="gNL-fF-ald" kind="push" identifier="seg_beaconSort1" id="6Ow-8k-vrB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJu-oD-g0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -653,6 +661,7 @@ FINDER</string>
                     <navigationItem key="navigationItem" id="CUx-yx-Qvk"/>
                     <size key="freeformSize" width="320" height="1000"/>
                     <connections>
+                        <outlet property="greenZeug" destination="RZN-3x-GT5" id="aLA-p3-JmH"/>
                         <outlet property="scrollView" destination="bfq-3w-ngZ" id="Lmy-hj-j8v"/>
                     </connections>
                 </viewController>
@@ -788,81 +797,59 @@ Material</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fbD-nI-9PR">
-                                        <rect key="frame" x="89" y="217" width="138" height="208"/>
+                                        <rect key="frame" x="138" y="217" width="182" height="137"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_03.png">
+                                        <state key="normal" image="ArticleSlices11_03.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AjP-DI-oXQ">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_01.png">
+                                        <state key="normal" image="ArticleSlices11_01.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="htX-UP-wK8">
-                                        <rect key="frame" x="0.0" y="217" width="89" height="121"/>
+                                        <rect key="frame" x="1" y="217" width="138" height="209"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="ArticleSlice5_02.png">
+                                        <state key="normal" title="Button" image="ArticleSlices11_02.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IVV-Ns-QHr">
-                                        <rect key="frame" x="227" y="219" width="93" height="129"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_04.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qCT-Un-gNM">
-                                        <rect key="frame" x="0.0" y="338" width="89" height="134"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_05.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NQl-Jv-WfT">
-                                        <rect key="frame" x="227" y="348" width="93" height="139"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_06.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <connections>
+                                            <segue destination="bTD-7O-o5H" kind="push" id="f6x-kX-huf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6fp-Ee-cvp">
-                                        <rect key="frame" x="89" y="401" width="138" height="311"/>
+                                        <rect key="frame" x="138" y="353" width="182" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_07.png">
+                                        <state key="normal" image="ArticleSlices11_04.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kwi-OZ-3gp">
-                                        <rect key="frame" x="0.0" y="472" width="89" height="119"/>
+                                        <rect key="frame" x="138" y="535" width="182" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_08.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hyz-7g-bEx">
-                                        <rect key="frame" x="227" y="486" width="93" height="116"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_09.png">
+                                        <state key="normal" image="ArticleSlices11_06.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y4M-0z-SOJ">
-                                        <rect key="frame" x="1" y="591" width="88" height="135"/>
+                                        <rect key="frame" x="0.0" y="425" width="138" height="210"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_10.png">
+                                        <state key="normal" image="ArticleSlices11_05.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cwX-OA-Z7d">
-                                        <rect key="frame" x="227" y="602" width="93" height="135"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Hy-3Z-qOB">
+                                        <rect key="frame" x="1" y="634" width="138" height="210"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ArticleSlice5_12.png">
+                                        <state key="normal" image="ArticleSlices11_07.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="xNP-aS-BGx" kind="push" id="l4L-iY-a9u"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -877,7 +864,125 @@ Material</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJt-7T-gmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1874" y="1141"/>
+            <point key="canvasLocation" x="2279" y="926"/>
+        </scene>
+        <!--Detail1 Controller-->
+        <scene sceneID="Lok-bw-qeE">
+            <objects>
+                <viewController id="bTD-7O-o5H" customClass="CRYDetail1Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlX-7b-g5H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailf3.png" id="Mmc-we-LSC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GURKEN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="04Y-Dp-QF3" customClass="CRYLabel">
+                                <rect key="frame" x="36" y="90" width="303" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4€" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7yo-RG-Mvj" customClass="CRYLabel">
+                                <rect key="frame" x="36" y="131" width="303" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4na-WY-xWx">
+                                <rect key="frame" x="76" y="154" width="303" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FSF-zv-5zn" customClass="CRYLabel">
+                                <rect key="frame" x="91" y="171" width="303" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WFa-Wr-LNo" customClass="CRYLabel">
+                                <rect key="frame" x="36" y="311" width="303" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Frisch aus Franken
+ideal zum kochen</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pfeil.png" id="KMW-cQ-WCg">
+                                <rect key="frame" x="273" y="512" width="17" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yAe-LJ-cGq"/>
+                    <connections>
+                        <outlet property="imim" destination="KMW-cQ-WCg" id="fCC-ms-2LG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogc-HD-LB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="-330"/>
+        </scene>
+        <!--Detail1 Controller-->
+        <scene sceneID="GOp-1A-YyP">
+            <objects>
+                <viewController id="xNP-aS-BGx" customClass="CRYDetail1Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzA-73-Bai">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailf4.png" id="Yjj-9P-kJL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b6F-n0-Bc9" customClass="CRYLabel">
+                                <rect key="frame" x="156" y="301" width="303" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">CLUB
+MATE</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,29€" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sEF-fz-knX" customClass="CRYLabel">
+                                <rect key="frame" x="49" y="375" width="303" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YeF-8Y-Su8" customClass="CRYLabel">
+                                <rect key="frame" x="108" y="394" width="303" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">HÄLT RICHTIG
+LANGE WACH</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pfeil.png" id="zYu-h2-5N2">
+                                <rect key="frame" x="273" y="512" width="17" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rDW-pQ-zaM"/>
+                    <connections>
+                        <outlet property="imim" destination="zYu-h2-5N2" id="mId-RG-DIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaC-T9-3Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="350"/>
         </scene>
     </scenes>
     <resources>
@@ -892,6 +997,13 @@ Material</string>
         <image name="ArticleSlice5_09.png" width="186" height="232"/>
         <image name="ArticleSlice5_10.png" width="177" height="269"/>
         <image name="ArticleSlice5_12.png" width="186" height="270"/>
+        <image name="ArticleSlices11_01.png" width="640" height="435"/>
+        <image name="ArticleSlices11_02.png" width="276" height="418"/>
+        <image name="ArticleSlices11_03.png" width="364" height="277"/>
+        <image name="ArticleSlices11_04.png" width="364" height="363"/>
+        <image name="ArticleSlices11_05.png" width="276" height="417"/>
+        <image name="ArticleSlices11_06.png" width="364" height="367"/>
+        <image name="ArticleSlices11_07.png" width="276" height="419"/>
         <image name="FooterMainNavi.png" width="640" height="216"/>
         <image name="HeaderClear.png" width="640" height="170"/>
         <image name="Icon1MainNavi.png" width="40" height="45"/>
@@ -901,6 +1013,8 @@ Material</string>
         <image name="Pic2MainNavi.png" width="252" height="164"/>
         <image name="detail1.png" width="640" height="1136"/>
         <image name="detail2.png" width="640" height="1136"/>
+        <image name="detailf3.png" width="640" height="1136"/>
+        <image name="detailf4.png" width="640" height="1136"/>
         <image name="pfeil.png" width="35" height="73"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -909,9 +1023,9 @@ Material</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="jEl-at-Vs0"/>
+        <segue reference="gnc-zo-cld"/>
         <segue reference="irw-12-7Yi"/>
         <segue reference="E8I-pc-fGq"/>
-        <segue reference="gnc-zo-cld"/>
-        <segue reference="XqP-pQ-PzL"/>
     </inferredMetricsTieBreakers>
 </document>

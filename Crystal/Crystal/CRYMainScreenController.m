@@ -55,10 +55,26 @@
 }
 */
 
-- (IBAction)tappedAngebotButton:(id)sender {
+- (IBAction)tappedAngebotButton:(id)sender
+{
+    if (self.Beacon1) {
+        [self performSegueWithIdentifier:@"seg_beacon1" sender:self];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"seg_beacon2" sender:self];
+    }
 }
 
-- (IBAction)tappedSortimentButton:(id)sender {
+- (IBAction)tappedSortimentButton:(id)sender
+{
+    if (self.Beacon1) {
+        [self performSegueWithIdentifier:@"seg_beaconSort1" sender:self];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"seg_beaconSort2" sender:self];
+    }
 }
 
 - (IBAction)tappedInterestButton:(id)sender {

@@ -12,6 +12,7 @@
 #import "CRYBeaconManager.h"
 #import "CRYBeaconObject.h"
 #import "CRYUserSettings.h"
+#import "CRYMainScreenController.h"
 
 @interface CRYStartScreenController ()
 @property(nonatomic, strong) NSTimer *timer;
@@ -25,7 +26,7 @@
     static dispatch_once_t onceToken;
     static CRYBeaconManager* singleInstance;
     dispatch_once(&onceToken, ^{
-        singleInstance = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441] minorNumber:@[@60568] identifier:@[@"test"]];
+        singleInstance = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D", @"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441, @41844] minorNumber:@[@60568, @18399] identifier:@[@"test", @"beacon2"]];
     });
     return singleInstance;
 }
@@ -80,8 +81,12 @@
     
     self.animatedImageView.image = [UIImage animatedImageNamed:@"loading_cart_" duration:2.2];
 
-    [self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
+    //[self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
 
+
+    
+    
+    
     
     self.timer = [NSTimer timerWithTimeInterval:0.40
                                           target:self
@@ -99,17 +104,26 @@
     [self performSegueWithIdentifier: @"seg_nobeacon" sender: self];
 }
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier hasPrefix:@"seg_beacon"]) {
+        CRYMainScreenController *main = (CRYMainScreenController*)segue.destinationViewController;
+        
+        main.Beacon1 = self.manager.isBeaconInRange;
+        main.Beacon2 = self.manager.isBeaconInRange2;
+    }
+}
 
 -(void)timerTick
 {
     if(self.manager.isBeaconInRange)
     {
+            
         [self.timer invalidate];
         self.timer = nil;
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         
-        [self performSegueWithIdentifier: @"seg_beacon" sender:self];
+        [self performSegueWithIdentifier: @"seg_beacon1" sender:self];
     }
     else if(self.manager.isBeaconInRange2)
     {
@@ -117,7 +131,7 @@
         self.timer = nil;
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         
-        [self performSegueWithIdentifier: @"dfgh" sender:self];
+        [self performSegueWithIdentifier: @"seg_beacon2" sender:self];
     }
     else
     {
