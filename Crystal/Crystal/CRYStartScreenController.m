@@ -9,6 +9,7 @@
 #import "CRYStartScreenController.h"
 
 #import "CRYInitialScreenController.h"
+#import "CRYBeaconManager.h"
 #import "CRYBeaconObject.h"
 #import "CRYUserSettings.h"
 

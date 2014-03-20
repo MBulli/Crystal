@@ -1,20 +1,90 @@
 [
-	{
-		"name":"Artikel Traum 1",
-		"price":"750",
-		"currency":"€",
-		"description":"meine tolle Beschreibung",
-		"is_ad":true,
-		"category":["Getränke","Club Mate"],
-        "location": "I3.20"
-	},
-	{
-		"name":"Artikel Zeug 2",
-		"price":"1230",
-		"currency":"$",
-		"description":"super toll",
-		"is_ad":false,
-		"category":["nix"],
-        "location": "I3.20"
-	}
+//	{
+//		"name":"",
+//		"price":"750",
+//		"currency":"€",
+//		"description":"meine tolle Beschreibung",
+//		"is_ad":true,
+//        "location": "I3.20"
+//	},
+//	{
+//		"name":"Artikel Zeug 2",
+//		"price":"1230",
+//		"currency":"$",
+//		"description":"super toll",
+//		"is_ad":false,
+//        "location": "I3.20"
+//	}
+    {
+        "name":"RedBull",
+        "price":"free",
+        "currency":"",
+        "description":"Energy Drink",
+        "is_ad":false,
+        "location": "I3.20",
+        "in_stock": true,
+        "category_id": 1
+    }
+ {
+ "name":"Club Mate",
+ "price":"free",
+ "currency":"",
+ "description":"Tea based Energy Drink",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category_id": 1
+ }
+ {
+ "name":"Coca Cola",
+ "price":"free",
+ "currency":"",
+ "description":"Just Coke",
+ "is_ad":true,
+ "location": "I3.20",
+ "in_stock": true,
+ "category_id": 1
+ }
+ {
+ "name":"Coca Cola Zero",
+ "price":"free",
+ "currency":"",
+ "description":"Just Coke but Zero",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category_id": 1
+ }
+ {
+ "name":"Wasser",
+ "price":"free",
+ "currency":"",
+ "description":"Tastes like nothing",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category_id": 1
+ }
+ {
+ "name":"Kaffee",
+ "price":"free",
+ "currency":"",
+ "description":"Cofffffffeeeeeeeeeee",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category_id": 1
+ }
+ {
+ "name":"Mars",
+ "price":"free",
+ "currency":"",
+ "description":"Mars",
+ "is_ad":false,
+ "location": "I3.20",
+ "in_stock": true,
+ "category_id": 3
+ }
+
+ 
 ]

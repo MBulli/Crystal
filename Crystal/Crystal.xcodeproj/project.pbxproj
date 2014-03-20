@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54381F3D18DA8F95006DA475 /* CRYUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54381F3C18DA8F95006DA475 /* CRYUserSettings.m */; };
+		2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */; };
+		2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848784518DA89870083F812 /* UIColor+CRYExt.m */; };
+		2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784B18DA8CA20083F812 /* FooterArrow.png */; };
+		2848784E18DA8CA20083F812 /* HeaderClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784C18DA8CA20083F812 /* HeaderClear.png */; };
+		543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 543D9B7818DAA02D0061F281 /* CRYUserSettings.m */; };
 		54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C218DA424C00841333 /* CRYBeaconObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A694C018DA424C00841333 /* CRYBeaconObject.m */; };
 		54A694C418DA4DD700841333 /* server_return_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 54A694C318DA4DD700841333 /* server_return_sample.json */; };
@@ -54,8 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54381F3B18DA8F95006DA475 /* CRYUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYUserSettings.h; sourceTree = "<group>"; };
-		54381F3C18DA8F95006DA475 /* CRYUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYUserSettings.m; sourceTree = "<group>"; };
+		2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYQuestionDetailViewController.h; sourceTree = "<group>"; };
+		2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYQuestionDetailViewController.m; sourceTree = "<group>"; };
+		2848784418DA89870083F812 /* UIColor+CRYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRYExt.h"; sourceTree = "<group>"; };
+		2848784518DA89870083F812 /* UIColor+CRYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRYExt.m"; sourceTree = "<group>"; };
+		2848784B18DA8CA20083F812 /* FooterArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FooterArrow.png; sourceTree = "<group>"; };
+		2848784C18DA8CA20083F812 /* HeaderClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeaderClear.png; sourceTree = "<group>"; };
+		543D9B7718DAA02D0061F281 /* CRYUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYUserSettings.h; sourceTree = "<group>"; };
+		543D9B7818DAA02D0061F281 /* CRYUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYUserSettings.m; sourceTree = "<group>"; };
 		54A694BF18DA424C00841333 /* CRYBeaconObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYBeaconObject.h; sourceTree = "<group>"; };
 		54A694C018DA424C00841333 /* CRYBeaconObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYBeaconObject.m; sourceTree = "<group>"; };
 		54A694C318DA4DD700841333 /* server_return_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = server_return_sample.json; sourceTree = "<group>"; };
@@ -136,13 +146,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54381F3E18DA8FA3006DA475 /* Meth */ = {
+		2848783F18DA88390083F812 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2848784B18DA8CA20083F812 /* FooterArrow.png */,
+				2848784C18DA8CA20083F812 /* HeaderClear.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		543D9B7A18DAA0A70061F281 /* Meth */ = {
 			isa = PBXGroup;
 			children = (
 				54A694BF18DA424C00841333 /* CRYBeaconObject.h */,
 				54A694C018DA424C00841333 /* CRYBeaconObject.m */,
-				54381F3B18DA8F95006DA475 /* CRYUserSettings.h */,
-				54381F3C18DA8F95006DA475 /* CRYUserSettings.m */,
+				543D9B7718DAA02D0061F281 /* CRYUserSettings.h */,
+				543D9B7818DAA02D0061F281 /* CRYUserSettings.m */,
 				54A694C318DA4DD700841333 /* server_return_sample.json */,
 			);
 			name = Meth;
@@ -196,18 +215,15 @@
 				54A694C818DA50F700841333 /* 3rd Party Libs */,
 				AE55CE0718DA35590015E03B /* AppDelegate */,
 				AE55CE0818DA35680015E03B /* Controller */,
-				AE55CDE618DA35160015E03B /* CRYViewController.h */,
-				AE55CDE718DA35160015E03B /* CRYViewController.m */,
-				54381F3E18DA8FA3006DA475 /* Meth */,
-				AE55CE0918DA35740015E03B /* Images */,
-				AE55CDE918DA35160015E03B /* Images.xcassets */,
-				AE55CDD518DA35160015E03B /* Supporting Files */,
-				AE55CE1218DA3F330015E03B /* Vendor */,
-				AE55CE0618DA35540015E03B /* View */,
-				F9913F4018DA7D0600A1E17D /* Resources */,
-				F9913F5018DA829A00A1E17D /* Utilities */,
+				543D9B7A18DAA0A70061F281 /* Meth */,
 				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
 				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
+				AE55CDE618DA35160015E03B /* CRYViewController.h */,
+				AE55CDE718DA35160015E03B /* CRYViewController.m */,
+				2848783F18DA88390083F812 /* Images */,
+				AE55CDE918DA35160015E03B /* Images.xcassets */,
+				F9913F4018DA7D0600A1E17D /* Resources */,
+				AE55CDD518DA35160015E03B /* Supporting Files */,
 				2848784418DA89870083F812 /* UIColor+CRYExt.h */,
 				2848784518DA89870083F812 /* UIColor+CRYExt.m */,
 				F9DE75DD18DA9C2A00630DAF /* UIFont+CRYExtension.h */,
@@ -448,7 +464,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
-				54381F3D18DA8F95006DA475 /* CRYUserSettings.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
 				F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */,
@@ -460,6 +475,7 @@
 				2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */,
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
+				543D9B7918DAA02D0061F281 /* CRYUserSettings.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
