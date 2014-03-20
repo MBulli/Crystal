@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2834F90018DA9D5B00C4F507 /* CRYLoading.m */; };
 		2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */; };
 		2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848784518DA89870083F812 /* UIColor+CRYExt.m */; };
 		2848784D18DA8CA20083F812 /* FooterArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2848784B18DA8CA20083F812 /* FooterArrow.png */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2834F8FF18DA9D5B00C4F507 /* CRYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYLoading.h; sourceTree = "<group>"; };
+		2834F90018DA9D5B00C4F507 /* CRYLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYLoading.m; sourceTree = "<group>"; };
 		2848783C18DA821A0083F812 /* CRYQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYQuestionDetailViewController.h; sourceTree = "<group>"; };
 		2848783D18DA821A0083F812 /* CRYQuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYQuestionDetailViewController.m; sourceTree = "<group>"; };
 		2848784418DA89870083F812 /* UIColor+CRYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRYExt.h"; sourceTree = "<group>"; };
@@ -214,7 +217,6 @@
 				AE55CE1218DA3F330015E03B /* Vendor */,
 				AE55CE0618DA35540015E03B /* View */,
 				F9913F4018DA7D0600A1E17D /* Resources */,
-				F9913F5018DA829A00A1E17D /* Utilities */,
 				AE55CE1C18DA64C50015E03B /* CRYBeaconManager.h */,
 				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 				2848784418DA89870083F812 /* UIColor+CRYExt.h */,
@@ -262,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				F9913F5C18DA873E00A1E17D /* UI ELements */,
+				2834F8FF18DA9D5B00C4F507 /* CRYLoading.h */,
+				2834F90018DA9D5B00C4F507 /* CRYLoading.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -469,6 +473,7 @@
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
 				54A694C718DA50E800841333 /* JSONKit.m in Sources */,
+				2834F90118DA9D5B00C4F507 /* CRYLoading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

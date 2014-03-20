@@ -214,10 +214,6 @@
         <scene sceneID="8DB-fj-2jb">
             <objects>
                 <viewController id="eTM-eh-4fr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NE3-dK-gAL"/>
-                        <viewControllerLayoutGuide type="bottom" id="bDd-n7-1hg"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fu7-VM-TzD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
