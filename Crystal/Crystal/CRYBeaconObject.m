@@ -8,6 +8,7 @@
 
 #import "CRYBeaconObject.h"
 #import "JSONKit.h"
+#import "CRYUserSettings.h"
 
 @interface CRYBeaconObject()
 @property (nonatomic, copy) NSString *__id;
@@ -38,21 +39,32 @@
 		// don't ask the server for every request - caching
 		NSString *response = [self loadDataFromServer];
 		self.__articles = [response objectFromJSONString];
-		self.filteredArticles = @[];
+		self.filteredArticles = __articles;
 	}
 	return __articles;
 }
 
 -(NSArray*)advertisedArticles {
-	NSPredicate *pred = [NSPredicate predicateWithFormat:@"is_ad == YES"];
-	return [self.articles filteredArrayUsingPredicate:pred];
+	NSArray *liked = [CRYUserSettings loadCategories];
+	NSMutableArray *ret = [NSMutableArray array];
+	
+	for (NSDictionary* a in [self articles]) {
+		if ([[a valueForKey:@"is_ad"] isEqualToNumber:@1]) {
+			for (NSString *cat in [a valueForKey:@"category"]) {
+				if ([liked containsObject:cat]) {
+					[ret addObject:a];
+				}
+			}
+		}
+	}
+	return ret;
 }
 
 -(void)filterArray:(NSString*)searchString {
 	if (searchString.length<=0) {
 		self.filteredArticles = __articles;
 	} else {
-		NSPredicate *pred = [NSPredicate predicateWithFormat:@"name CONTAINS[c] %@",searchString];
+		NSPredicate *pred = [NSPredicate predicateWithFormat:@"name CONTAINS[c] %@ || description CONTAINS[c] %@",searchString,searchString];
 		self.filteredArticles = [self.articles filteredArrayUsingPredicate:pred];
 	}
 }

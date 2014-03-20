@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CRYInitialScreenController : UIViewController
+@interface CRYInitialScreenController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *dismissButton;
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)tappedDissmissButton:(id)sender;
 
