@@ -14,9 +14,12 @@
 
 @protocol CRYBeaconManagerDelegate <NSObject>
 -(void)test;
+
 @end
 
 @interface CRYBeaconManager : NSObject<ESTBeaconManagerDelegate>
+-(instancetype)initWithUUID:(NSArray*) UUIDString majorNumber:(NSArray*) majorNumber minorNumber:(NSArray*)minorNumber identifier:(NSArray*)identifier;
+
 @property(nonatomic, strong) NSMutableArray* UUID;
 @property(nonatomic, strong) NSMutableArray* minor;
 @property(nonatomic, strong) NSMutableArray* major;

@@ -7,7 +7,7 @@
 //
 
 #import "CRYBeaconManager.h"
-
+#import "CRYBeaconObject.h"
 
 @interface CRYBeaconManager ()
 
@@ -23,7 +23,13 @@
     {
         self.beaconManager = [[ESTBeaconManager alloc]init];
         self.beaconManager.delegate = self;
-        self.beaconManager.avoidUnknownStateBeacons = YES;
+        //self.beaconManager.avoidUnknownStateBeacons = YES;
+        
+        self.UUID = [[NSMutableArray alloc] init];
+        self.major = [[NSMutableArray alloc]init];
+        self.minor =[[NSMutableArray alloc]init];
+        self.identifier = [[NSMutableArray alloc]init];
+        self.beaconRegion = [[NSMutableArray alloc]init];
         
         for (NSUInteger i=0; i<UUIDString.count; i++) {
             [self.UUID addObject:[[NSUUID alloc] initWithUUIDString:UUIDString[i]]];
@@ -35,9 +41,11 @@
                                                                                  major:((NSNumber*)self.major[i]).shortValue
                                                                                  minor:((NSNumber*)self.minor[i]).shortValue
                                                                                 identifier:self.identifier[i]]];
-            [self.beaconManager startMonitoringForRegion:self.beaconRegion[i]];
-            [self.beaconManager requestStateForRegion:self.beaconRegion[i]];
-            [self.beaconManager startRangingBeaconsInRegion:self.beaconRegion[i]];
+            
+            ESTBeaconRegion* beacon = (ESTBeaconRegion*)self.beaconRegion[i];
+            [self.beaconManager startMonitoringForRegion:beacon];
+            [self.beaconManager requestStateForRegion:beacon];
+            [self.beaconManager startRangingBeaconsInRegion:beacon];
         }
         
     }
@@ -47,45 +55,47 @@
 -(void)beaconManager:(ESTBeaconManager *)manager didDetermineState:(CLRegionState)state forRegion:(ESTBeaconRegion *)region
 {
     
-    [self.delegate test];
     if (state == CLRegionStateInside) {
-        //[self displayRegionAlert:region withTitle:@"did determine state - state inside"];
+        CRYBeaconObject* beacon = [CRYBeaconObject beacon:region.proximityUUID.UUIDString];
+        NSLog(@"%@",[beacon articles].lastObject);
     }
     else if(state== CLRegionStateOutside)
     {
+        NSLog(@"Outside");
         //[self displayRegionAlert:region withTitle:@"did determine state - state outside"];
     }
     else if(state == CLRegionStateUnknown)
     {
+        NSLog(@"Unkown");
         //[self displayRegionAlert:region withTitle:@"did determine state - state unknown"];
     }
 }
 
 -(void)beaconManager:(ESTBeaconManager *)manager didFailDiscoveryInRegion:(ESTBeaconRegion *)region
 {
-    //[self displayRegionAlert:region withTitle:@"did fail discovery in region"];
+    [self displayRegionAlert:region withTitle:@"did fail discovery in region"];
 }
 -(void)beaconManager:(ESTBeaconManager *)manager monitoringDidFailForRegion:(ESTBeaconRegion *)region withError:(NSError *)error
 {
-    //[self displayRegionAlert:region withTitle:@"monitor did fail for region"];
+    [self displayRegionAlert:region withTitle:@"monitor did fail for region"];
 }
 
 -(void)beaconManager:(ESTBeaconManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(ESTBeaconRegion *)region
 {
     for (ESTBeacon* beacon  in beacons) {
-        //NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
-        //[self displayRegionAlert:region withTitle:string];
+    NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
+    [self displayRegionAlert:region withTitle:string];
     }
-    //   [self displayRegionAlert:<#(ESTBeaconRegion *)#> withTitle:<#(NSString *)#>]
+      // [self displayRegionAlert:region withTitle:<#(NSString *)#>]
 }
 
 -(void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
 {
-    //[self displayRegionAlert:region withTitle:@"did enter region"];
+    [self displayRegionAlert:region withTitle:@"did enter region"];
 }
 -(void)beaconManager:(ESTBeaconManager *)manager didExitRegion:(ESTBeaconRegion *)region
 {
-    //[self displayRegionAlert:region withTitle:@"did exit region"];
+    [self displayRegionAlert:region withTitle:@"did exit region"];
 }
 
 -(void)displayRegionAlert:(ESTBeaconRegion *)region withTitle:(NSString *)title
