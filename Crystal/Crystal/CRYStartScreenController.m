@@ -14,7 +14,7 @@
 #import "CRYUserSettings.h"
 
 @interface CRYStartScreenController ()
-
+@property(nonatomic, strong) NSTimer *timer;
 @property(nonatomic, strong) CRYBeaconManager* manager;
 @end
 
@@ -56,10 +56,42 @@
         [self presentViewController:initSetup animated:YES completion:nil];
     }
     self.manager = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441] minorNumber:@[@60568] identifier:@[@"test"]];
-    self.manager.
 
+
+    [self performSelector:@selector(noBeaconInTime) withObject:nil afterDelay:10];
+
+    
+    self.timer = [NSTimer timerWithTimeInterval:0.40
+                                          target:self
+                                        selector:@selector(timerTick)
+                                        userInfo:nil
+                                         repeats:NO];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    
+}
+-(void)noBeaconInTime
+{
+    [self performSegueWithIdentifier: @"seg_nobeacon" sender: self];
 }
 
+-(void)timerTick
+{
+    
+    if(self.manager.isBeaconInRange)
+    {
+        [self.timer invalidate];
+        [NSObject cancelPreviousPerformRequestsWithTarget:self];
+        [self performSegueWithIdentifier: @"seg_beacon" sender: self];
+    }
+    else
+    {
+        self.timer = [NSTimer timerWithTimeInterval:0.40
+                                         target:self
+                                       selector:@selector(timerTick)
+                                       userInfo:nil
+                                        repeats:NO];
+    }
+}
 
 
 - (IBAction)tappedFavoritesButton:(id)sender {

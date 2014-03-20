@@ -86,6 +86,10 @@
     for (ESTBeacon* beacon  in beacons) {
         NSString* string = [NSString stringWithFormat:@"UUID: %@, Distance: %@", beacon.proximityUUID.UUIDString, beacon.distance];
         [self displayRegionAlert:region withTitle:string];
+        if(beacon.distance.integerValue == -1)
+        {
+            self.isBeaconInRange = false;
+        }
     }
     if(beacons.count == 0)
     {
