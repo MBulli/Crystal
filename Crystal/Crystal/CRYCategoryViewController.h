@@ -12,6 +12,6 @@
 
 @interface CRYCategoryViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIButton *gemüse;
+@property (weak, nonatomic) IBOutlet UIButton *greenZeug;
 
 @end

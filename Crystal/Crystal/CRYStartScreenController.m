@@ -26,7 +26,7 @@
     static dispatch_once_t onceToken;
     static CRYBeaconManager* singleInstance;
     dispatch_once(&onceToken, ^{
-        singleInstance = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441] minorNumber:@[@60568] identifier:@[@"test"]];
+        singleInstance = [[CRYBeaconManager alloc] initWithUUID:@[@"B9407F30-F5F8-466E-AFF9-25556B57FE6D", @"B9407F30-F5F8-466E-AFF9-25556B57FE6D"] majorNumber:@[@56441, @41844] minorNumber:@[@60568, @18399] identifier:@[@"test", @"beacon2"]];
     });
     return singleInstance;
 }

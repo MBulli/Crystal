@@ -246,7 +246,7 @@
                     <connections>
                         <outlet property="animatedImageView" destination="yev-hb-5LE" id="NDh-B9-2f3"/>
                         <segue destination="eTM-eh-4fr" kind="push" identifier="seg_nobeacon" id="z6E-BC-Avh"/>
-                        <segue destination="811-Yf-HGU" kind="push" identifier="seg_beacon" id="u61-xe-sSK"/>
+                        <segue destination="811-Yf-HGU" kind="push" identifier="seg_beacon1" id="u61-xe-sSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQP-Fk-j6Q" sceneMemberID="firstResponder"/>
@@ -327,6 +327,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qGp-hG-pFu" kind="push" id="jEl-at-Vs0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -351,10 +354,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MERKEZTTEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77b-SL-hKr">
-                                <rect key="frame" x="106" y="244" width="109" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainViewFooterLogo.png" id="H8T-zK-ecQ">
+                                <rect key="frame" x="0.0" y="157" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MERKZETTEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oW8-8L-pT6" customClass="CRYLabel">
+                                <rect key="frame" x="0.0" y="290" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.2901960784" green="0.52156862749999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -445,7 +453,7 @@ von Soßen</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g0b-ho-pMP" customClass="CRYButton">
-                                <rect key="frame" x="139" y="257" width="131" height="71"/>
+                                <rect key="frame" x="139" y="250" width="131" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal">
@@ -469,7 +477,7 @@ FINDER</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SDC-Ej-sZz" customClass="CRYButton">
-                                <rect key="frame" x="139" y="137" width="131" height="71"/>
+                                <rect key="frame" x="139" y="107" width="131" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="ANGEBOTE">
@@ -653,6 +661,7 @@ FINDER</string>
                     <navigationItem key="navigationItem" id="CUx-yx-Qvk"/>
                     <size key="freeformSize" width="320" height="1000"/>
                     <connections>
+                        <outlet property="greenZeug" destination="RZN-3x-GT5" id="aLA-p3-JmH"/>
                         <outlet property="scrollView" destination="bfq-3w-ngZ" id="Lmy-hj-j8v"/>
                     </connections>
                 </viewController>
@@ -855,7 +864,7 @@ Material</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJt-7T-gmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="561"/>
+            <point key="canvasLocation" x="2279" y="926"/>
         </scene>
         <!--Detail1 Controller-->
         <scene sceneID="Lok-bw-qeE">
@@ -1014,6 +1023,7 @@ LANGE WACH</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="jEl-at-Vs0"/>
         <segue reference="gnc-zo-cld"/>
         <segue reference="irw-12-7Yi"/>
         <segue reference="E8I-pc-fGq"/>

@@ -44,8 +44,12 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    if ([[CRYUserSettings loadCategories] containsObject:@"Gemüse"]) {
-        self.gemüse.imageView.image = [UIImage imageNamed:@"ArticleSlice5_06"];
+    if (![[CRYUserSettings loadCategories] containsObject:@"Gemüse"]) {
+        [self.greenZeug setImage:[UIImage imageNamed:@"ArticleSlice5_06"] forState:UIControlStateNormal];
+        [self.greenZeug setEnabled:NO];
+    } else {
+        [self.greenZeug setImage:[UIImage imageNamed:@"ArticleSlice5_02"] forState:UIControlStateNormal];
+        [self.greenZeug setEnabled:YES];
     }
     
     for (UIView *view in self.scrollView.subviews) {
