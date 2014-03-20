@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "UIFont+CRYExtension.h"
+#import "UIColor+CRYExt.h"
 
 @interface Utilities : NSObject
 

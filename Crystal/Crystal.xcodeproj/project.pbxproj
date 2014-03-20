@@ -38,12 +38,12 @@
 		F9913F4218DA7D4100A1E17D /* logo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4118DA7D4100A1E17D /* logo_placeholder.png */; };
 		F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4718DA7DA100A1E17D /* CRYInitialScreenController.m */; };
 		F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F4918DA7DA100A1E17D /* CRYStartScreenController.m */; };
-		F9913F5318DA82C600A1E17D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F5218DA82C600A1E17D /* Utilities.m */; };
-		F9913F5B18DA83D300A1E17D /* UIFont+CRYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F5A18DA83D300A1E17D /* UIFont+CRYExtension.m */; };
 		F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9913F5E18DA875F00A1E17D /* CRYLabel.m */; };
 		F9DE75DA18DA8F1900630DAF /* ProximaNovaCondRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4D18DA826B00A1E17D /* ProximaNovaCondRegular.ttf */; };
 		F9DE75DB18DA8F1900630DAF /* ProximaNovaCondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4E18DA826B00A1E17D /* ProximaNovaCondLight.ttf */; };
 		F9DE75DC18DA8F1900630DAF /* ProximaNovaCondSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9913F4F18DA826B00A1E17D /* ProximaNovaCondSemibold.ttf */; };
+		F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */; };
+		F9DE75E218DA9C2A00630DAF /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE75E018DA9C2A00630DAF /* Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,12 +107,12 @@
 		F9913F4D18DA826B00A1E17D /* ProximaNovaCondRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaCondRegular.ttf; sourceTree = "<group>"; };
 		F9913F4E18DA826B00A1E17D /* ProximaNovaCondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaCondLight.ttf; sourceTree = "<group>"; };
 		F9913F4F18DA826B00A1E17D /* ProximaNovaCondSemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaCondSemibold.ttf; sourceTree = "<group>"; };
-		F9913F5118DA82C600A1E17D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		F9913F5218DA82C600A1E17D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		F9913F5918DA83D300A1E17D /* UIFont+CRYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CRYExtension.h"; sourceTree = "<group>"; };
-		F9913F5A18DA83D300A1E17D /* UIFont+CRYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CRYExtension.m"; sourceTree = "<group>"; };
 		F9913F5D18DA875F00A1E17D /* CRYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRYLabel.h; sourceTree = "<group>"; };
 		F9913F5E18DA875F00A1E17D /* CRYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRYLabel.m; sourceTree = "<group>"; };
+		F9DE75DD18DA9C2A00630DAF /* UIFont+CRYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CRYExtension.h"; sourceTree = "<group>"; };
+		F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CRYExtension.m"; sourceTree = "<group>"; };
+		F9DE75DF18DA9C2A00630DAF /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		F9DE75E018DA9C2A00630DAF /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +219,12 @@
 				AE55CE1D18DA64C50015E03B /* CRYBeaconManager.m */,
 				2848784418DA89870083F812 /* UIColor+CRYExt.h */,
 				2848784518DA89870083F812 /* UIColor+CRYExt.m */,
+				F9DE75DD18DA9C2A00630DAF /* UIFont+CRYExtension.h */,
+				F9DE75DE18DA9C2A00630DAF /* UIFont+CRYExtension.m */,
+				F9DE75DF18DA9C2A00630DAF /* Utilities.h */,
+				F9DE75E018DA9C2A00630DAF /* Utilities.m */,
+				AE55CE1218DA3F330015E03B /* Vendor */,
+				AE55CE0618DA35540015E03B /* View */,
 			);
 			path = Crystal;
 			sourceTree = "<group>";
@@ -330,25 +336,6 @@
 				F9913F4F18DA826B00A1E17D /* ProximaNovaCondSemibold.ttf */,
 			);
 			name = Fonts;
-			sourceTree = "<group>";
-		};
-		F9913F5018DA829A00A1E17D /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				F9913F5418DA82EA00A1E17D /* Extensions */,
-				F9913F5118DA82C600A1E17D /* Utilities.h */,
-				F9913F5218DA82C600A1E17D /* Utilities.m */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
-		F9913F5418DA82EA00A1E17D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F9913F5918DA83D300A1E17D /* UIFont+CRYExtension.h */,
-				F9913F5A18DA83D300A1E17D /* UIFont+CRYExtension.m */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		F9913F5C18DA873E00A1E17D /* UI ELements */ = {
@@ -472,12 +459,12 @@
 				AE55CDDB18DA35160015E03B /* main.m in Sources */,
 				54A694C118DA424C00841333 /* CRYBeaconObject.m in Sources */,
 				AE55CDDF18DA35160015E03B /* CRYAppDelegate.m in Sources */,
-				F9913F5B18DA83D300A1E17D /* UIFont+CRYExtension.m in Sources */,
 				F9913F5F18DA875F00A1E17D /* CRYLabel.m in Sources */,
-				F9913F5318DA82C600A1E17D /* Utilities.m in Sources */,
 				AE55CE1E18DA64C50015E03B /* CRYBeaconManager.m in Sources */,
 				F9913F4A18DA7DA100A1E17D /* CRYInitialScreenController.m in Sources */,
 				2848783E18DA821A0083F812 /* CRYQuestionDetailViewController.m in Sources */,
+				F9DE75E218DA9C2A00630DAF /* Utilities.m in Sources */,
+				F9DE75E118DA9C2A00630DAF /* UIFont+CRYExtension.m in Sources */,
 				2848784618DA89870083F812 /* UIColor+CRYExt.m in Sources */,
 				F9913F4B18DA7DA100A1E17D /* CRYStartScreenController.m in Sources */,
 				AE55CDE818DA35160015E03B /* CRYViewController.m in Sources */,
